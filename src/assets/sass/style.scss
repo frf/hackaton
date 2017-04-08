@@ -1,7 +1,11 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
+body {
+font-family: $varela;
+}
 .top-bar {
 	border-radius: 0 !important;
 	background: $darkblue;
