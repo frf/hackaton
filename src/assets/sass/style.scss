@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 body {
-font-family: $varela;
+	font-family: $varela;
 }
 .top-bar {
 	border-radius: 0 !important;
@@ -13,17 +13,30 @@ font-family: $varela;
 	border: none;
 
 	.navbar-brand {
-	    padding: 20px 15px;
+		padding: 20px 15px;
 		height: inherit;
 		img{ width: 100%; }
 	}
-}
 
+	.navbar-nav{
+		margin-top: 20px;
+		li>
+		a{
+			color: $turquoise;
+			padding:5px 15px;
+		}
+	}
+	.navbar-right{margin-right: 0;}
+}
+.btn-rounded{
+	border:1px solid $turquoise;
+	@include border-radius(90px);
+}
 .sidebar {
 	position: relative;
-    width: 20em;
-    border-radius: 0px;
-    height: calc(100vh - 70px);
+	width: 20em;
+	border-radius: 0px;
+	height: calc(100vh - 70px);
 	background: $light-grey;
 	border: 0;
 	margin: 0;
@@ -49,11 +62,11 @@ font-family: $varela;
 
 	.nav-item {
 		//border-bottom: 0.5px solid;
-	    //border-bottom-color: rgb(89, 96, 105);
+		//border-bottom-color: rgb(89, 96, 105);
 		a {
 			color: #666;
 			&:hover a{
-			 	/*color:	#2b3643;*/
+				/*color:	#2b3643;*/
 			}
 		}
 	}

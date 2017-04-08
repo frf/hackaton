@@ -2,6 +2,15 @@
 
 $darkblue: #30364a;
 $light-grey: #f0f0f0;
-
+$turquoise: #00bfbc;
 //Fonts
 $varela: 'Varela Round', sans-serif;
+
+
+//mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
