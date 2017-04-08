@@ -32,10 +32,5 @@ tmtags
 nbproject/*
 
 # Project
-src/.sass-cache/*
-src/node_modules/*
-src/.ftppass
-src/tmp/*
-assets/js/main.min.js
-odin.zip
-sample1.html
+/.sass-cache/*
+/node_modules/*
