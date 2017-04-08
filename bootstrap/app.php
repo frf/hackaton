@@ -65,13 +65,17 @@ $container['view'] = function ($container){
 		'logo'	=> '/assets/images/supervisor_logo.png',
 	]);
 
-	$view->getEnvironment()->addGlobal('flash', $container->flash);
+    $view->getEnvironment()->addGlobal('flash', $container->flash);
 
 	return $view;
 };
 
 $container['HomeController'] = function ($container) {
-	return new \Thinkific\Controllers\HomeController($container);
+    return new \Thinkific\Controllers\HomeController($container);
+};
+
+$container['ApiUser'] = function ($container) {
+    return new \Thinkific\Controllers\Api\User($container);
 };
 
 $container['AuthenticationController'] = function ($container) {
