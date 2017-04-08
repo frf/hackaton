@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenVpnManager\Validation\Exceptions;
+namespace Thinkific\Validation\Exceptions;
 
 use Respect\Validation\Exceptions\ValidationException;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenVpnManager\Validation\Rules;
+namespace Thinkific\Validation\Rules;
 
 use Respect\Validation\Rules\AbstractRule;
-use OpenVpnManager\Models\User;
+use Thinkific\Models\User;
 
 class EmailAvailable extends AbstractRule
 {

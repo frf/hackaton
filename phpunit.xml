@@ -5,7 +5,7 @@
 		verbose="false"
 		stopOnFailure="false">
 	<testsuites>
-		<testsuite name="OpenVpnManager Test Suite">
+		<testsuite name="Thinkific Test Suite">
 			<directory>tests</directory>
 		</testsuite>
 	</testsuites>

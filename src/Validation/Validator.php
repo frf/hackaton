@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenVpnManager\Validation;
+namespace Thinkific\Validation;
 
 use Respect\Validation\Validator as Respect;
 use Respect\Validation\Exceptions\NestedValidationException;

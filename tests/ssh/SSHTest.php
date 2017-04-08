@@ -12,7 +12,7 @@ class SSHTest extends TestCase
 	protected $port;
 
 	public function setUp(){
-		$this->ssh 		= new OpenVpnManager\SSH\SSH();
+		$this->ssh 		= new Thinkific\SSH\SSH();
 		$this->user 	= 'thiagoalencar';
 		$this->password = 'forever007';
 		$this->host 	= 'localhost';

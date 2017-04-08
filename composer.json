@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-        	"OpenVpnManager\\": "src"
+        	"Thinkific\\": "src"
         }
     },
     "require-dev": {

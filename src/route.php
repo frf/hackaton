@@ -1,7 +1,7 @@
 <?php
 
-use OpenVpnManager\Middleware\AuthenticationMiddleware;
-use OpenVpnManager\Middleware\GuestMiddleware;
+use Thinkific\Middleware\AuthenticationMiddleware;
+use Thinkific\Middleware\GuestMiddleware;
 
 $app->get('/', 'HomeController:index')->setName('home'); 
 

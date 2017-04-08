@@ -45,7 +45,7 @@ class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
         ),
         'O' => 
         array (
-            'OpenVpnManager\\' => 15,
+            'Thinkific\\' => 15,
         ),
         'I' => 
         array (
@@ -125,7 +125,7 @@ class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
-        'OpenVpnManager\\' => 
+        'Thinkific\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

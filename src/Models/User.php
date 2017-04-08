@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenVpnManager\Models;
+namespace Thinkific\Models;
 
 use \Illuminate\Database\Eloquent\Model;
 

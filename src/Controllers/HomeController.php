@@ -1,7 +1,7 @@
 <?php
 
-namespace OpenVpnManager\Controllers;
-use OpenVpnManager\Models\User;
+namespace Thinkific\Controllers;
+use Thinkific\Models\User;
 
 /**
 * 

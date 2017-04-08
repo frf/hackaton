@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenVpnManager\Controllers;
+namespace Thinkific\Controllers;
 
 use \Slim\Views\Twig as View;
 
@@ -36,7 +36,7 @@ class Controller
 	}
 
 	public function getAppName(){
-		return 'OpenVpnManager';
+		return 'Thinkific';
 	}
 
 	public function getContainer(){

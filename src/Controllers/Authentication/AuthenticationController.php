@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenVpnManager\Controllers\Authentication;
-use OpenVpnManager\Controllers\Controller;
-use OpenVpnManager\Models\User;
+namespace Thinkific\Controllers\Authentication;
+use Thinkific\Controllers\Controller;
+use Thinkific\Models\User;
 use Respect\Validation\Validator;
 /**
 * 

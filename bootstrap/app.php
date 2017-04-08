@@ -36,7 +36,7 @@ $container['db'] = function ($container) use($capsule){
 };
 
 $container['authentication'] = function ($container) {
-	return new \OpenVpnManager\Authentication\Authentication;
+	return new \Thinkific\Authentication\Authentication;
 };
 
 $container['flash'] = function ($container) {
@@ -71,32 +71,32 @@ $container['view'] = function ($container){
 };
 
 $container['HomeController'] = function ($container) {
-	return new \OpenVpnManager\Controllers\HomeController($container);
+	return new \Thinkific\Controllers\HomeController($container);
 };
 
 $container['AuthenticationController'] = function ($container) {
-	return new \OpenVpnManager\Controllers\Authentication\AuthenticationController($container);
+	return new \Thinkific\Controllers\Authentication\AuthenticationController($container);
 };
 
 $container['PasswordController'] = function ($container) {
-	return new \OpenVpnManager\Controllers\Authentication\PasswordController($container);
+	return new \Thinkific\Controllers\Authentication\PasswordController($container);
 };
 
 $container['validator'] = function ($container){
-	return new OpenVpnManager\Validation\Validator;
+	return new Thinkific\Validation\Validator;
 };
 
 $container['csrf'] = function ($container) {
 	return new \Slim\Csrf\Guard;
 };
 
-$app->add(new \OpenVpnManager\Middleware\ValidationErrorsMiddleware($container));
-$app->add(new \OpenVpnManager\Middleware\OldInputMiddleware($container));
-$app->add(new \OpenVpnManager\Middleware\CsrfViewMiddleware($container));
+$app->add(new \Thinkific\Middleware\ValidationErrorsMiddleware($container));
+$app->add(new \Thinkific\Middleware\OldInputMiddleware($container));
+$app->add(new \Thinkific\Middleware\CsrfViewMiddleware($container));
 
 $app->add($container->csrf);
 
-Validator::with('OpenVpnManager\\Validation\\Rules\\');
+Validator::with('Thinkific\\Validation\\Rules\\');
 
 require __DIR__ . '/../src/route.php';
 

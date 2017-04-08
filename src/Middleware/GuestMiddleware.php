@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenVpnManager\Middleware;
+namespace Thinkific\Middleware;
 
 /**
 * 
