@@ -1,0 +1,14 @@
+<?php
+
+namespace OpenVpnManager\Controllers;
+use OpenVpnManager\Models\User;
+
+/**
+* 
+*/
+class HomeController extends Controller
+{
+	public function index($request,$response){
+		return $this->getView()->render($response, 'home.twig');
+	}	
+}
