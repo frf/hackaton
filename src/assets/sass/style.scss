@@ -30,6 +30,7 @@ body {
 }
 .btn-rounded{
 	border:1px solid $turquoise;
+	
 	@include border-radius(90px);
 }
 .sidebar {
