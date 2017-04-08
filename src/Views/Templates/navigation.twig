@@ -1,10 +1,6 @@
 <nav class="navbar top-bar navbar-inverse">
 
 	<div class="container-fluid">
-
-
-
-
 		<div class="navbar-header">
 			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="">
 				<span class="sr-only">Toggle navigation</span>
@@ -15,14 +11,14 @@
 			<a class="navbar-brand" href="{{ path_for('home') }}"><img src="{{ settings.logo }}" srcset="{{ settings.logo2x }} 2x"></a>
 
 		</div>
-
+	{% if authentication.check %}
 		<a href="" data-toggle="offcanvas"><i class="fa fa-navicon fa-2x"></i></a>
-
 		<div class=" navbar-right">
 			<a href="{{ base_url() }}/authentication/signout?" class="btn btn-rounded" >Logout</a>
 		</div>
-
+	{% endif %}
 	</div>
-
 </nav>
-{% include 'Templates/sidebar.twig' %}
+{% if authentication.check %}
+    {% include 'Templates/sidebar.twig' %}
+{% endif %}
