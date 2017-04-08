@@ -13,7 +13,7 @@ module.exports = function( grunt ) {
 		dirs: {
 			css: '../assets/css',
 			js: 'src/assets/js',
-			js_public: 'src/assets/js',
+			js_public: 'public/assets/js',
 			sass: 'src/assets/sass',
 			images_public: 'src/assets/images',
 			fonts: 'src/assets/fonts',
