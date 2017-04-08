@@ -75,6 +75,10 @@ $container['HomeController'] = function ($container) {
     return new \Thinkific\Controllers\HomeController($container);
 };
 
+$container['Course'] = function ($container) {
+    return new \Thinkific\Controllers\Course\CourseController($container);
+};
+
 $container['ApiUser'] = function ($container) {
     return new \Thinkific\Controllers\Api\User($container);
 };
