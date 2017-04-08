@@ -62,7 +62,8 @@ $container['view'] = function ($container){
 	]);
 
 	$view->getEnvironment()->addGlobal('settings', [
-		'logo'	=> '/assets/images/supervisor_logo.png',
+		'logo'	=> '/assets/images/thinkific-logo.png',
+		'logo2x'	=> '/assets/images/thinkific-logo@2x.png',
 	]);
 
 	$view->getEnvironment()->addGlobal('flash', $container->flash);
