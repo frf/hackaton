@@ -49,7 +49,7 @@ class AuthenticationController extends Controller
 
 	public function getSignOut($request, $response){
 		$this->getContainer()->authentication->logout();
-		return $response->withRedirect($this->getRouter()->pathFor('home'));
+		return $response->withRedirect($this->getRouter()->pathFor('authentication.signin'));
 	}
 
 	public function postSignIn($request, $response){
