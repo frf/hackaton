@@ -7,9 +7,10 @@
     <link rel="stylesheet" type="text/css" href="{{ base_url() }}/assets/css/style.css">
 </head>
 <body>
-    {% include 'templates/navigation.twig' %}
     <div class="container">
-        {% include 'Templates/flash.twig' %}
+        {% if authentication.check %}
+            {% include 'templates/navigation.twig' %}
+        {% endif %}
         {% block content %}{% endblock %}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>

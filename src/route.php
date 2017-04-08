@@ -7,7 +7,7 @@ use Thinkific\Controllers\Api\User;
 $app->group('/rest', function () use ($app){
     $app->get('/users/{id}', 'ApiUser:getUser');
 
-})->add(new GuestMiddleware($container));
+});
 
 $app->get('/', 'HomeController:index')->setName('home');
 
