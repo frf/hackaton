@@ -44,7 +44,7 @@ class AuthenticationController extends Controller
 
 
 	public function getSignIn($request, $response){
-		return $this->getView()->render($response, 'authentication/signIn.twig');
+		return $this->getView()->render($response, 'Authentication/authentication.twig');
 	}
 
 	public function getSignOut($request, $response){

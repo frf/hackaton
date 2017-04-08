@@ -2,6 +2,11 @@
 
 {% block title %}Home{% endblock %}
 
+{% if authentication.check %}
+    {% block sidebar %}{% endblock %}
+{% endif %}
+
+
 {% block content %}
     <div class="container">
         Video Template
