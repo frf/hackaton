@@ -42,13 +42,16 @@
 }
 
 .sidebar {
-	position: absolute;
-    width: 14em;
+	position: relative;
+    width: 300px;
     border-radius: 0px;
     height: calc(100vh - 52px);
     background-color: #364150;
 	border: 0;
 	margin: 0;
+}
+.content{
+	width: calc(100vw - 300px);
 }
 
 .nav-item {

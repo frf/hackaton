@@ -42,13 +42,22 @@
 }
 
 .sidebar {
-	position: absolute;
+	position: relative;
     width: 20em;
     border-radius: 0px;
     height: calc(100vh - 70px);
 	background: $light-grey;
 	border: 0;
 	margin: 0;
+	float: left;
+
+	&.sidebar-offcanvas{
+		display: none;
+
+		&.active{
+			display: block !important;
+		}
+	}
 
 	.dropdown-menu {
 		position: relative;
@@ -60,8 +69,6 @@
 		padding: 0;
 	}
 
-
-
 	.nav-item {
 		//border-bottom: 0.5px solid;
 	    //border-bottom-color: rgb(89, 96, 105);
@@ -71,7 +78,9 @@
 			 	/*color:	#2b3643;*/
 			}
 		}
-
 	}
+}
 
+.content{
+	width: calc(100vw - 300px);
 }
