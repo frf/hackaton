@@ -1,4 +1,41 @@
 # Created by .ignore support plugin (hsz.mobi)
 /vendor/
 /bootstrap/app.php
+/node_modules/
+/.sass_cache/
+.DS_Store
 
+._*
+.AppleDouble
+.DS_Store
+.localized
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+*~
+TAGS
+tags
+.*.sw[a-z]
+.netrwhist
+*.un~
+Session.vim
+*.sublime-project
+*.sublime-workspace
+*.sublime-projectcompletions
+*.tmproj
+*.tmproject
+tmtags
+nbproject/*
+
+# Project
+src/.sass-cache/*
+src/node_modules/*
+src/.ftppass
+src/tmp/*
+assets/js/main.min.js
+odin.zip
+sample1.html
