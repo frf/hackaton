@@ -15,11 +15,15 @@ class Controller
 		$this->container = $container;
 	}
 
-	public function getView(){
-		return $this->container->view;
-	}
+    public function getView(){
+        return $this->container->view;
+    }
 
-	public function getDB(){
+    public function setView($view){
+        $this->container->view = $view;
+    }
+
+    public function getDB(){
 		return $this->container->db;
 	}
 
