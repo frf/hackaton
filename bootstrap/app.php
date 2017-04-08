@@ -8,7 +8,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = new \Slim\App([
 	'settings' 	=> [
-		'displayErrorDetails' => true, 
+		'displayErrorDetails' => true,
 	    // 'determineRouteBeforeAppMiddleware' => true,
 	    'addContentLengthHeader' => false,
     		'db' => [
@@ -16,7 +16,7 @@ $app = new \Slim\App([
 			'host'		=> 'localhost',
 			'database'	=> 'thinkific',
 			'username'		=> 'root',
-			'password'	=> 'r00t',
+			'password'	=> 'root',
 			'charset'	=> 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'	=> '',
@@ -44,7 +44,7 @@ $container['flash'] = function ($container) {
 };
 
 $container['view'] = function ($container){
-	
+
 	$view = new \Slim\Views\Twig( __DIR__ . '/../src/Views', [
 		'cache' => false,
 	]);
@@ -99,4 +99,3 @@ $app->add($container->csrf);
 Validator::with('Thinkific\\Validation\\Rules\\');
 
 require __DIR__ . '/../src/route.php';
-

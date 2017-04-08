@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
+class ComposerStaticInit024decd7da3e861ebe834ab72f62a45d
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -24,6 +24,10 @@ class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'T' => 
+        array (
+            'Thinkific\\' => 10,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -42,10 +46,6 @@ class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
             'ParagonIE\\ConstantTime\\' => 23,
-        ),
-        'O' => 
-        array (
-            'Thinkific\\' => 15,
         ),
         'I' => 
         array (
@@ -84,6 +84,10 @@ class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Thinkific\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
@@ -124,10 +128,6 @@ class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
         'ParagonIE\\ConstantTime\\' => 
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
-        ),
-        'Thinkific\\' =>
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Interop\\Container\\' => 
         array (
@@ -651,10 +651,10 @@ class ComposerStaticInit6052adbd1e23659d742b6c538345b19f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6052adbd1e23659d742b6c538345b19f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6052adbd1e23659d742b6c538345b19f::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit6052adbd1e23659d742b6c538345b19f::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit6052adbd1e23659d742b6c538345b19f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit024decd7da3e861ebe834ab72f62a45d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit024decd7da3e861ebe834ab72f62a45d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit024decd7da3e861ebe834ab72f62a45d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit024decd7da3e861ebe834ab72f62a45d::$classMap;
 
         }, null, ClassLoader::class);
     }
