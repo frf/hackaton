@@ -18,10 +18,16 @@ $app->group('', function() use ($app) {
 })->add(new GuestMiddleware($container));
 
 $app->group('', function() use ($app){
-    $app->get('/', 'HomeController:index')->setName('home');
-	$app->get( '/authentication/password/change', 'PasswordController:getChangePassword' )->setName('authentication.password.change');
+    $app->get( '/', 'HomeController:index')->setName('home');
+
+    $app->get( '/authentication/password/change', 'PasswordController:getChangePassword' )->setName('authentication.password.change');
 	$app->post('/authentication/password/change', 'PasswordController:postChangePassword');
 
 	$app->get( '/authentication/signout', 'AuthenticationController:getSignOut' )->setName('authentication.signout');
+
+	$app->group('/courses', function () use ($app){
+	    $app->get('/new', 'Course:new');
+    });
+
 })->add(new AuthenticationMiddleware($container));
 
