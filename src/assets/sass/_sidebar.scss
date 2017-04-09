@@ -10,7 +10,10 @@
 	float: left;
 	top: 70px;
 	z-index: 1;
-	padding: 0 0 20px 0;;
+	padding: 0 0 20px 0;
+	transition:0.3s;
+    -webkit-transition:0.3s;
+    -moz-transition:0.3s;
 
 	h2{
 		padding: 20px 10px;
@@ -21,10 +24,11 @@
 	}
 
 	&.sidebar-offcanvas{
-		display: none;
+		left: -300px;
 
 		&.active{
 			display: block !important;
+			left: 0;
 		}
 	}
 
