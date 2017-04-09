@@ -5,10 +5,52 @@
 {% if authentication.check %}
     {% block sidebar %}{% endblock %}
 {% endif %}
-
+{% block assetsHeader %}
+    <script type="text/javascript" src="//cdn.embed.ly/player-0.0.12.min.js"></script>
+    <style>
+        .embedly-embed{
+            width:50em;
+            height: 28em !important;
+        }
+        #result {
+            margin-left: calc(50vw - 20em);
+            width: 40em;
+            height: 23em;
+            padding: 0;
+            margin-top: 4em;
+        }
+    </style>
+{% endblock %}
 
 {% block content %}
-    <div class="container">
-        Video Template
+    <div class="row">
+        <div class="col-md-12 row">
+            <div class="col-md-12">
+                <div id="result">
+                </div>
+                <div class="col-md-5 col-md-offset-4">
+                    <div id="captions">
+                        <form method="get" action="">
+                            <input name="url" type="text" value="https://www.youtube.com/embed/9hIQjrMHTv4"/>
+                            <button type="submit">IR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+{% endblock %}
+
+{% block assetsFooter %}
+    <script src="/assets/plugins/playerjs/scripts/libs/jquery.js"></script>
+    <script src="/assets/plugins/playerjs/scripts/libs/foundation.min.js"></script>
+    <script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
+    <style src="/assets/plugins/playerjs/css/foundation.min.css"></style>
+
+    <script type="text/javascript" src="http://cdn.embed.ly/player-0.0.12.min.js"></script>
+    <script src="/assets/plugins/playerjs/scripts/captions.js"></script>
+    <script>
+        $.embedly.defaults.key = '3ee528c9eb4b4908b268ce1ace120c92';
+        $(document).foundation();
+    </script>
 {% endblock %}
