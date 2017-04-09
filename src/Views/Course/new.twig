@@ -27,16 +27,16 @@
 
 		<div class="email-collector">
 			<h1>Enter your email address to view this video.</h1>
-			<form class="" action="">
+			<form>
 
 				<div class="row name">
 
 					<div class="col-sm-6">
-						<input type="text" name="name" rows="2" cols="80" class="form-control" placeholder="First name">
+						<input type="text" name="nameCollector" id="nameCollector" rows="2" cols="80" class="form-control" placeholder="First name">
 					</div>
 
 					<div class="col-sm-6">
-						<input type="text" name="name" rows="2" cols="80" class="form-control" placeholder="Last name">
+						<input type="text" name="lNameCollector" id="lNameCollector" rows="2" cols="80" class="form-control" placeholder="Last name">
 					</div>
 
 				</div>
@@ -45,10 +45,11 @@
 				<div class="form-group">
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-						<input type="text" name="" value="" class="form-control" placeholder="email@provider.com">
+						<input type="text" name="emailCollector" id="emailCollector" value="" class="form-control" placeholder="email@provider.com">
 					</div>
+					<small id="msgErroEmail" class="label-danger"></small>
 				</div>
-				<input type="submit" name="" value="Play" class="btn btn-md btn-block btn-primary text-uppercase">
+				<input type="button" name="btnClickSaveMail" id="btnClickSaveMail" value="Play" class="btn btn-md btn-block btn-primary text-uppercase">
 			</form>
 		</div>
 	</div>
@@ -106,6 +107,7 @@
 <script type="text/javascript" src="http://cdn.embed.ly/player-0.0.12.min.js"></script>
 <script src="/assets/plugins/playerjs/scripts/captions.js"></script>
 <script src="/assets/js/copy.clipboard.js"></script>
+<script src="/assets/js/validators.js"></script>
 
 
 <script type="text/javascript" src="/bower_components/jssocials/dist/jssocials.min.js"></script>
@@ -123,7 +125,6 @@ $("#share").jsSocials({
 });
 
 
-
 $(function() {
     $("#click_embed").click(function(){
         $("#embed").show();
@@ -132,6 +133,33 @@ $(function() {
         $("#alertCopy").show();
         copyToClipboard(document.getElementById("embed_text"));
     });
+	$("#btnClickSaveMail").click(function(){
+		var emailCollector 	= $("#emailCollector").val();
+		var nameCollector 	= $("#nameCollector").val();
+		var lNameCollector 	= $("#lNameCollector").val();
+
+		if(!isValidEmailAddress(emailCollector)){
+
+			$("#msgErroEmail").html("Sorry! Must be a valid email.");
+
+		} else {
+
+			$("#msgErroEmail").html("");
+
+			$.getJSON("/rest/email/new?email=" + emailCollector + "&name=" + nameCollector + "&lastname=" + lNameCollector, function (data) {
+
+				if (data[0].status == 'success') {
+					$("#msgErroEmail").html("");
+					$(".email-collector").hide();
+				};
+
+				if (data[0].status == 'error') {
+					$("#msgErroEmail").html(data[0].message);
+				};
+			});
+		}
+	});
+
 });
 
 </script>
