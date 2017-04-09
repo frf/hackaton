@@ -15,24 +15,25 @@
 }
 
 .embedly-embed {
-    display: block;
-    position: absolute;
+	display: block;
+	position: absolute;
 
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .resp {
 	display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-  padding-top: 62.5%; /* This is your aspect-ratio */
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 62.5%; /* This is your aspect-ratio */
+	margin-bottom: 40px;
 }
 
 
@@ -40,8 +41,13 @@
 
 .email-collector{
 	position: absolute;
-	width: 50%;
+	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.8);
 	z-index: 100;
+	padding: 10%;
+	text-align: center;
+	color: #fff;
+
+	h1{ font-size: 40px;}
 }
