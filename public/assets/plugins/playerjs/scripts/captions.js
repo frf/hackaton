@@ -74,8 +74,8 @@
           '<input type="text" class="caption form-control" placeholder="caption text" value="'+c+'">',
         '</div>',
         '<div class="form-group col-sm-2">',
-          '<label>Remove</label>',
-          '<a href="#" class="remove"><i class="fa fa-minus"></i></a>',
+          '<label class="visibility-hidden">Action</label>',
+          '<a href="#" class="remove btn btn-block btn-default"><i class="fa fa-minus-circle"></i> remove</a>',
         '</div>',
       '</div>'
     ].join(''));
