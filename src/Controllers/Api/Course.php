@@ -15,4 +15,85 @@ class Course extends Controller
         $embedded =  sprintf("<iframe width=\"560\" height=\"315\" src=\"http://%s/%s/courses/emb\" frameborder=\"0\" allowfullscreen></iframe>",$_SERVER["HTTP_HOST"], $args["id"]);
         echo $embedded;
     }
+
+    public function getQuestions($request, $response, $args){
+        $result = array(
+            "Questions" => array(
+                array(
+                    "title" => "Quem descobriu o Brasil?",
+                    "time" => 100,
+                    "answer" => array(
+                        "a" => "Pedro Alvares Cabral",
+                        "b" => "Pedro Alvares Cabrel",
+                        "c" => "Pedro Alvares Cabril",
+                        "d" => "Pedro Alvares Cabrol",
+                    )
+                ),
+                array(
+                    "title" => "Quem descobriu o Brasil?",
+                    "time" => 100,
+                    "answer" => array(
+                        "a" => "Pedro Alvares Cabral",
+                        "b" => "Pedro Alvares Cabrel",
+                        "c" => "Pedro Alvares Cabril",
+                        "d" => "Pedro Alvares Cabrol",
+                    )
+                ),
+                array(
+                    "title" => "Quem descobriu o Brasil?",
+                    "time" => 100,
+                    "answer" => array(
+                        "a" => "Pedro Alvares Cabral",
+                        "b" => "Pedro Alvares Cabrel",
+                        "c" => "Pedro Alvares Cabril",
+                        "d" => "Pedro Alvares Cabrol",
+                    )
+                ),
+                array(
+                    "title" => "Quem descobriu o Brasil?",
+                    "time" => 100,
+                    "answer" => array(
+                        "a" => "Pedro Alvares Cabral",
+                        "b" => "Pedro Alvares Cabrel",
+                        "c" => "Pedro Alvares Cabril",
+                        "d" => "Pedro Alvares Cabrol",
+                    )
+                ),
+                array(
+                    "title" => "Quem descobriu o Brasil?",
+                    "time" => 100,
+                    "answer" => array(
+                        "a" => "Pedro Alvares Cabral",
+                        "b" => "Pedro Alvares Cabrel",
+                        "c" => "Pedro Alvares Cabril",
+                        "d" => "Pedro Alvares Cabrol",
+                    )
+                ),
+                array(
+                    "title" => "Quem descobriu o Brasil?",
+                    "time" => 100,
+                    "answer" => array(
+                        "a" => "Pedro Alvares Cabral",
+                        "b" => "Pedro Alvares Cabrel",
+                        "c" => "Pedro Alvares Cabril",
+                        "d" => "Pedro Alvares Cabrol",
+                    )
+                ),
+                array(
+                    "title" => "Quem descobriu o Brasil?",
+                    "time" => 100,
+                    "answer" => array(
+                        "a" => "Pedro Alvares Cabral",
+                        "b" => "Pedro Alvares Cabrel",
+                        "c" => "Pedro Alvares Cabril",
+                        "d" => "Pedro Alvares Cabrol",
+                    )
+                ),
+            )
+        );
+
+        $response = $response->withJson($result,200);
+        return $this->getView()->render($response, 'Json.twig');
+    }
+
 }
