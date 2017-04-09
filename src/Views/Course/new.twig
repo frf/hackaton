@@ -43,12 +43,12 @@
 		<div class="row caption-actions" style="display: block;">
 			<div class="col-sm-4">
 				<a href="#" class="play">Restart
-				</a><a href="#" class="share">Share
 				</a></div><a href="#" class="share">
 				</a><div class="col-sm-8 text-right"><a href="#" class="share">
 				</a><a href="#" id="add">Add another caption <i class="fa fa-plus"></i></a>
 			</div>
 		</div>
+		<div class="row caption-actions"  style="display: block;"><div class="col-sm-12" id="share"></div></div>
 	</div>
 
 </div>
@@ -66,7 +66,22 @@
 
 <script type="text/javascript" src="http://cdn.embed.ly/player-0.0.12.min.js"></script>
 <script src="/assets/plugins/playerjs/scripts/captions.js"></script>
+
+
+<script type="text/javascript" src="/bower_components/jssocials/dist/jssocials.min.js"></script>
+<link type="text/css" rel="stylesheet" href="/bower_components/jssocials/dist/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="/bower_components/jssocials/dist/jssocials-theme-classic.css" />
+
 <script>
 $.embedly.defaults.key = '3ee528c9eb4b4908b268ce1ace120c92';
+
+$("#share").jsSocials({
+	shareIn: "popup",
+	showLabel: false,
+	showCount: false,
+	shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+});
 </script>
+
+
 {% endblock %}
