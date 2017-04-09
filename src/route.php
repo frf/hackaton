@@ -11,6 +11,7 @@ $app->group('/rest', function () use ($app){
     $app->get('/email/new', 'ApiEmail:new');
     $app->get('/{id}/courses/embedded', 'ApiCourse:loadEmbedded');
     $app->get('/{id}/courses/questions', 'ApiCourse:getQuestions');
+    $app->get('/{id}/courses/saveQuestions', 'ApiCourse:saveQuestions');
 });
 
 

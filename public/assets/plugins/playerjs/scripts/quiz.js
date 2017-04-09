@@ -90,21 +90,12 @@
     var bannerQuestion = function(i) {
 
 
-        $.each(dataJson[0], function (index, item) {
-            console.log(item);
+        $.each(dataJson[0]['Questions'], function (index, item) {
+            if (this.start = i){
+                data = this;
+            }
         });
 
-        var data = {
-            "id"    : i,
-            "title" : "Question?",
-            "start" : 0,
-            "answer": {
-                "a": "",
-                "b": "",
-                "c": "",
-                "d": ""
-            }
-        };
         if ($('.email-collector.question').size() == 0) {
 
             $('#result').prepend([
@@ -322,8 +313,25 @@
         $(document).on('click', '.saveQuestion', function(event){
             var form = $(".email-collector.question form input");
             var formRes = objectifyForm(form);
-            captions[formRes.time] = formRes;
-            console.log(captions[formRes.time]);
+
+            $.ajax({
+                type: "GET",
+                data: formRes,
+                url: "http://localhost/rest/16/courses/saveQuestions",
+                success: function(msg){
+                    console.log(msg);
+                }
+            });
+
+
+//            var emailRegister = function (email) {
+//                $.getJSON( "http://localhost/rest/email/new?email="+email, function(data) {
+//                    if (data[0].status == 'success'){
+//                        $('fazalgo');
+//                    };
+//                });
+//            }
+
             $(".email-collector.question").remove();
             player.play();
             return false;

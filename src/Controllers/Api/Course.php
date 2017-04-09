@@ -21,7 +21,8 @@ class Course extends Controller
             "Questions" => array(
                 array(
                     "title" => "Quem descobriu o Brasil?",
-                    "time" => 100,
+                    "id"    => 1,
+                    "start" => 100,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -31,7 +32,8 @@ class Course extends Controller
                 ),
                 array(
                     "title" => "Quem descobriu o Brasil?",
-                    "time" => 100,
+                    "id"    => 1,
+                    "start" => 100,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -41,7 +43,8 @@ class Course extends Controller
                 ),
                 array(
                     "title" => "Quem descobriu o Brasil?",
-                    "time" => 100,
+                    "id"    => 1,
+                    "start" => 100,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -51,7 +54,8 @@ class Course extends Controller
                 ),
                 array(
                     "title" => "Quem descobriu o Brasil?",
-                    "time" => 100,
+                    "id"    => 1,
+                    "start" => 100,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -61,7 +65,8 @@ class Course extends Controller
                 ),
                 array(
                     "title" => "Quem descobriu o Brasil?",
-                    "time" => 100,
+                    "id"    => 1,
+                    "start" => 100,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -71,7 +76,8 @@ class Course extends Controller
                 ),
                 array(
                     "title" => "Quem descobriu o Brasil?",
-                    "time" => 100,
+                    "id"    => 1,
+                    "start" => 100,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -81,7 +87,8 @@ class Course extends Controller
                 ),
                 array(
                     "title" => "Quem descobriu o Brasil?",
-                    "time" => 100,
+                    "id"    => 1,
+                    "start" => 100,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -96,4 +103,12 @@ class Course extends Controller
         return $this->getView()->render($response, 'Json.twig');
     }
 
+    public function saveQuestions($request, $response, $args){
+        $result = array(
+            "status" => "ok"
+        );
+
+        $response = $response->withJson($result,200);
+        return $this->getView()->render($response, 'Json.twig');
+    }
 }
