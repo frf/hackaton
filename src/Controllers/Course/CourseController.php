@@ -25,8 +25,7 @@ class CourseController extends Controller
 
         $atributes = $course->getAttributes();
 
-
-        $redirect =  "http://" . $_SERVER["HTTP_HOST"] . "/" . $atributes["id"]  . str_replace("/new", "",$_SERVER['PATH_INFO']);
+        $redirect =  sprintf("http://%s/%s/courses",$_SERVER["HTTP_HOST"], $atributes["id"]);
         header("Location: $redirect");
         exit();
     }
