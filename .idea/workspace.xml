@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="">
+    <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="- Finishing the project...">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" afterPath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Api/Course.php" afterPath="$PROJECT_DIR$/src/Controllers/Api/Course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/route.php" afterPath="$PROJECT_DIR$/src/route.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/route.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+              <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
               <folding>
                 <element signature="e#7#57#0#PHP" expanded="true" />
               </folding>
@@ -1213,11 +1210,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491773620513</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="- Finishing the project...">
+      <created>1491774798998</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1491774798998</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73763000" />
+    <option name="totallyTimeSpent" value="73855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1920" height="1053" extended-state="6" />
@@ -1480,8 +1484,8 @@
         <state relative-caret-position="441">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <marker date="1491773637000" expanded="true" signature="1012:1018" ph="{...}" />
-            <marker date="1491773637000" expanded="true" signature="1013:1016" ph="{...}" />
+            <marker date="1491774812000" expanded="true" signature="1012:1018" ph="{...}" />
+            <marker date="1491774812000" expanded="true" signature="1013:1016" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1757,7 +1761,7 @@
     <entry file="file://$PROJECT_DIR$/src/route.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
           <folding>
             <element signature="e#7#57#0#PHP" expanded="true" />
           </folding>
