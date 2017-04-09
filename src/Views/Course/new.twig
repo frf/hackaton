@@ -3,54 +3,62 @@
 {% block title %}Home{% endblock %}
 
 {% if authentication.check %}
-    {% block sidebar %}{% endblock %}
+	{% block sidebar %}{% endblock %}
 {% endif %}
 {% block assetsHeader %}
-    <script type="text/javascript" src="//cdn.embed.ly/player-0.0.12.min.js"></script>
-    <style>
-        .embedly-embed{
-            width:50em;
-            height: 28em !important;
-        }
-        #result {
-            margin-left: calc(50vw - 20em);
-            width: 40em;
-            height: 23em;
-            padding: 0;
-            margin-top: 4em;
-        }
-    </style>
+
 {% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-md-12 row">
-            <div class="col-md-12">
-                <div id="result">
-                </div>
-                <div class="col-md-5 col-md-offset-4">
-                    <div id="captions">
-                        <form method="get" action="">
-                            <input name="url" type="text" value="https://www.youtube.com/embed/9hIQjrMHTv4"/>
-                            <button type="submit">IR</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="row">
+	<div id="result">
+	</div>
+
+	<div id="captions">
+		<form method="get" action="" class="">
+			<div class="form-inline load-video-box">
+				<div class="form-group">
+
+					<div class="input-group">
+						<div class="input-group-addon"><i class="fa fa-video-camera"></i></div>
+						<input name="url" type="text" value="https://www.youtube.com/embed/9hIQjrMHTv4"/ class="form-control">
+
+					</div>
+
+					<button type="submit" class="btn btn-primary">load video</button>
+				</div>
+			</div>
+
+		</form>
+		<div class="row caption-actions" style="display: block;">
+			<div class="col-sm-4">
+				<a href="#" class="play">Restart
+				</a><a href="#" class="share">Share
+				</a></div><a href="#" class="share">
+				</a><div class="col-sm-8 text-right"><a href="#" class="share">
+				</a><a href="#" id="add">Add another caption <i class="fa fa-plus"></i></a>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+
 {% endblock %}
 
 {% block assetsFooter %}
-    <script src="/assets/plugins/playerjs/scripts/libs/jquery.js"></script>
-    <script src="/assets/plugins/playerjs/scripts/libs/foundation.min.js"></script>
-    <script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
-    <style src="/assets/plugins/playerjs/css/foundation.min.css"></style>
+<script src="/assets/plugins/playerjs/scripts/libs/jquery.js"></script>
 
-    <script type="text/javascript" src="http://cdn.embed.ly/player-0.0.12.min.js"></script>
-    <script src="/assets/plugins/playerjs/scripts/captions.js"></script>
-    <script>
-        $.embedly.defaults.key = '3ee528c9eb4b4908b268ce1ace120c92';
-        $(document).foundation();
-    </script>
+<script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
+
+
+<script type="text/javascript" src="http://cdn.embed.ly/player-0.0.12.min.js"></script>
+<script src="/assets/plugins/playerjs/scripts/captions.js"></script>
+<script>
+$.embedly.defaults.key = '3ee528c9eb4b4908b268ce1ace120c92';
+$(document).foundation();
+</script>
 {% endblock %}

@@ -32,7 +32,7 @@
         var ratio = ((obj.height/obj.width)*100).toPrecision(4) + '%';
         var $div = $('<div class="resp"><span id="caption"></span></div>');
         $div.append(obj.html);
-        $div.css('padding-bottom', ratio);
+        //$div.css('padding-bottom', ratio);
         $('#result').append($div);
 
         // Find the iframe and create a players.
@@ -65,15 +65,15 @@
 
     $('#captions form').append([
       '<div class="row">',
-        '<div class="large-2 columns">',
+        '<div class="form-group col-sm-2">',
           '<label>Range</label>',
-          '<input type="text" class="time" placeholder="i.e. 0-10" value="'+t+'">',
+          '<input type="text" class="time form-control" placeholder="i.e. 0-10" value="'+t+'">',
         '</div>',
-        '<div class="large-9 columns">',
+        '<div class="form-group col-sm-9">',
           '<label>Caption</label>',
-          '<input type="text" class="caption" placeholder="caption text" value="'+c+'">',
+          '<input type="text" class="caption form-control" placeholder="caption text" value="'+c+'">',
         '</div>',
-        '<div class="large-1 columns">',
+        '<div class="form-group col-sm-1">',
           '<label>Remove</label>',
           '<a href="#" class="remove"><i class="fa fa-minus"></i></a>',
         '</div>',

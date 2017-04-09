@@ -1,0 +1,15 @@
+.result{
+	position: relative;
+}
+.resp{
+	position: relative;
+	span#caption{
+		display: none;
+		position: absolute;
+		z-index: 10000;
+		top: 10px;
+		left: 10px;
+		background: #fff;
+		padding: 10px;
+	}
+}
