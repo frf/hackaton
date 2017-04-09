@@ -68,13 +68,4 @@
 <script>
 $.embedly.defaults.key = '3ee528c9eb4b4908b268ce1ace120c92';
 </script>
-	<script>
-		var emailRegister = function (email) {
-			$.getJSON( "http://localhost/rest/email/new?email="+email, function(data) {
-					if (data[0].status == 'success'){
-					    $('fazalgo');
-					};
-			});
-        }
-	</script>
 {% endblock %}
