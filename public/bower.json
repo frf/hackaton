@@ -1,0 +1,20 @@
+{
+  "name": "thinkific",
+  "homepage": "https://github.com/thiagofalencar/hackaton",
+  "authors": [
+    "fabio@fabiofarias.com.br <Fabio Rocha de Farias>"
+  ],
+  "description": "Hackathon Thinkific",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jssocials": "^1.4.0"
+  }
+}
