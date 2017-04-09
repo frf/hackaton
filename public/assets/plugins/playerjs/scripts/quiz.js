@@ -284,7 +284,7 @@
 
                 // Autoplay
                 player.on('ready', function(){
-                    player.play();
+                    //player.play();
                 });
             });
 
@@ -355,6 +355,7 @@
                     if (data[0].status == 'success') {
                         $("#msgErroEmail").html("");
                         $(".email-collector.form").hide();
+                        player.play();
                     };
 
                     if (data[0].status == 'error') {

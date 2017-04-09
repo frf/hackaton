@@ -4,10 +4,7 @@
     <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" afterPath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Api/Course.php" afterPath="$PROJECT_DIR$/src/Controllers/Api/Course.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" afterPath="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Course/new.twig" afterPath="$PROJECT_DIR$/src/Views/Course/new.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/home.twig" afterPath="$PROJECT_DIR$/src/Views/home.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,16 +28,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quiz.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="quiz.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="356" column="48" lean-forward="false" selection-start-line="356" selection-start-column="44" selection-end-line="356" selection-end-column="48" />
+            <state relative-caret-position="263">
+              <caret line="354" column="54" lean-forward="true" selection-start-line="354" selection-start-column="54" selection-end-line="354" selection-end-column="54" />
               <folding>
                 <element signature="e#5562#8144#0" expanded="false" />
-                <marker date="1491779679000" expanded="true" signature="3563:3580" ph="..." />
-                <marker date="1491779679000" expanded="true" signature="3563:3596" ph="..." />
-                <marker date="1491779679000" expanded="true" signature="7918:7935" ph="..." />
+                <marker date="1491779828000" expanded="true" signature="3563:3580" ph="..." />
+                <marker date="1491779828000" expanded="true" signature="3563:3596" ph="..." />
+                <marker date="1491779828000" expanded="true" signature="7918:7935" ph="..." />
               </folding>
             </state>
           </provider>
@@ -50,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/Models/Course.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -60,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Course.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
-              <caret line="106" column="38" lean-forward="true" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
+              <caret line="106" column="38" lean-forward="false" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -70,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controllers/Course/CourseController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="40" />
+              <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -123,15 +120,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+            <state relative-caret-position="370">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <marker date="1491779692000" expanded="false" signature="2046:2061" ph="..." />
+                <marker date="1491779772000" expanded="false" signature="2035:2050" ph="..." />
               </folding>
             </state>
           </provider>
@@ -176,11 +173,11 @@
       <find>initial</find>
       <find>objectifyForm</find>
       <find>captions</find>
-      <find>play()</find>
       <find>bannerQuestion</find>
       <find>data</find>
       <find>each</find>
       <find>mute</find>
+      <find>play()</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -230,8 +227,8 @@
         <option value="$PROJECT_DIR$/src/Views/home.twig" />
         <option value="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" />
         <option value="$PROJECT_DIR$/src/Controllers/Api/Course.php" />
-        <option value="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" />
         <option value="$PROJECT_DIR$/src/Views/Course/new.twig" />
+        <option value="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" />
       </list>
     </option>
   </component>
@@ -1159,11 +1156,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491775041544</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="- Last commit...">
+      <created>1491779712999</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1491779712999</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75701000" />
+    <option name="totallyTimeSpent" value="75861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1920" height="1053" extended-state="6" />
@@ -1646,18 +1650,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="106" column="38" lean-forward="true" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/Course/CourseController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="40" />
+          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1665,7 +1661,7 @@
     <entry file="file://$PROJECT_DIR$/src/Models/Course.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1680,27 +1676,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js">
+    <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="356" column="48" lean-forward="false" selection-start-line="356" selection-start-column="44" selection-end-line="356" selection-end-column="48" />
+        <state relative-caret-position="370">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <element signature="e#5562#8144#0" expanded="false" />
-            <marker date="1491779679000" expanded="true" signature="3563:3580" ph="..." />
-            <marker date="1491779679000" expanded="true" signature="3563:3596" ph="..." />
-            <marker date="1491779679000" expanded="true" signature="7918:7935" ph="..." />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <marker date="1491779772000" expanded="false" signature="2035:2050" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
+    <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Course.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        <state relative-caret-position="663">
+          <caret line="106" column="38" lean-forward="false" selection-start-line="106" selection-start-column="38" selection-end-line="106" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="354" column="54" lean-forward="true" selection-start-line="354" selection-start-column="54" selection-end-line="354" selection-end-column="54" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <marker date="1491779692000" expanded="false" signature="2046:2061" ph="..." />
+            <element signature="e#5562#8144#0" expanded="false" />
+            <marker date="1491779828000" expanded="true" signature="3563:3580" ph="..." />
+            <marker date="1491779828000" expanded="true" signature="3563:3596" ph="..." />
+            <marker date="1491779828000" expanded="true" signature="7918:7935" ph="..." />
           </folding>
         </state>
       </provider>
