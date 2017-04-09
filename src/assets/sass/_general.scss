@@ -75,3 +75,50 @@ body {
 
 	}
 }
+
+
+
+.btn{ @include border-radius(4px);
+	&:focus {
+		outline: none !important;
+		box-shadow: none;
+	}
+}
+.btn-lg{
+	padding: 24px;
+	font-size: 16px;
+}
+
+.btn-md{
+	padding: 16px;
+	font-size: 16px;
+}
+
+.btn-primary{
+	background: $turquoise;
+	border-color: $turquoise;
+}
+
+.btn-secondary{
+	background: $purple;
+	border-color: $purple;
+	color: #fff !important;
+	&:hover, &:focus{
+		background: $darkpurple !important;
+		color: #fff !important;
+	}
+}
+.btn-rounded{
+	@include border-radius(90px);
+}
+
+.btn-rounded-o{
+	@extend .btn-rounded;
+	border:1px solid $purple;
+	color: $purple;
+}
+
+.btn-white {
+	border-color: #fff;
+	color: #fff;
+}
