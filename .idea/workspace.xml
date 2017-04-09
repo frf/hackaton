@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Course/new.twig" afterPath="$PROJECT_DIR$/src/Views/Course/new.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/databaseScript.sql" afterPath="$PROJECT_DIR$/db/databaseScript.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -935,11 +935,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491712793630</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="- Created method rest to register email">
+      <created>1491713217445</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1491713217445</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44646000" />
+    <option name="totallyTimeSpent" value="44761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
@@ -994,7 +1001,8 @@
     <MESSAGE value="- Created the template 'Course/new.twig'" />
     <MESSAGE value="- Created the page authentication unified (Singin / Singout)" />
     <MESSAGE value="- Created the new course page" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Created the new course page" />
+    <MESSAGE value="- Created method rest to register email" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Created method rest to register email" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
