@@ -6,6 +6,7 @@ use Thinkific\Controllers\Api\User;
 
 $app->group('/rest', function () use ($app){
     $app->get('/users/{id}', 'ApiUser:getUser');
+    $app->get('/email/new', 'ApiEmail:new');
 });
 
 
@@ -25,9 +26,8 @@ $app->group('', function() use ($app){
 
 	$app->get( '/authentication/signout', 'AuthenticationController:getSignOut' )->setName('authentication.signout');
 
-	$app->group('/courses', function () use ($app){
-	    $app->get('/new', 'Course:new');
-    });
+    $app->get('/courses/new',  'Course:new');
+    $app->get('/{id}/courses', 'Course:view');
 
 })->add(new AuthenticationMiddleware($container));
 
