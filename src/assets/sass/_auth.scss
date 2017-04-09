@@ -99,13 +99,18 @@
 .btn-secondary{
 	background: $purple;
 	border-color: $purple;
-	color: #fff;
+	color: #fff !important;
 }
 .btn-rounded{
-	border:1px solid $purple;
-	color: $purple;
 	@include border-radius(90px);
 }
+
+.btn-rounded-o{
+	@extend .btn-rounded;
+	border:1px solid $purple;
+	color: $purple;
+}
+
 .btn-white {
 	border-color: #fff;
 	color: #fff;
