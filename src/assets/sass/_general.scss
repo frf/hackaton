@@ -6,6 +6,10 @@ body {
 
 }
 
+.box-spacing{
+	margin-bottom: 30px;
+}
+
 .top-bar {
 	border-radius: 0 !important;
 	background: $darkblue;
@@ -44,6 +48,7 @@ body {
 	float: left;
 	top: 70px;
 	z-index: 1;
+	padding: 20px 0;
 
 	&.sidebar-offcanvas{
 		display: none;
@@ -60,7 +65,7 @@ body {
 		float: none;
 		border: 0;
 		margin: 0;
-		padding: 0;
+		padding: 15px;
 	}
 
 	.nav-item {
@@ -69,7 +74,7 @@ body {
 		a {
 			color: #666;
 			text-transform: uppercase;
-			padding:10px 0;
+			padding: 10px 20px;
 			&:hover a{
 				/*color:	#2b3643;*/
 			}
