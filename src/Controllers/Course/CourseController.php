@@ -17,15 +17,25 @@ class CourseController extends Controller
         $user = $container->authentication->getUser();
         $params = $request->getParams();
 
+        error_log(var_dump($params));
+        $queryString = (isset($_SERVER['QUERY_STRING'])) ? sprintf("?" . $_SERVER['QUERY_STRING']) : "";
+
         $course = CourseModel::create([
                 'user_id' => $user["id"],
                 'title' => 'My Course',
                 'mudule_id' => 1
         ]);
 
+        $courseMeta = CourseMeta::create([
+            'course_id' => $params["id"],
+            'module_id' => 1,
+            'key'       => 'query_string',
+            'value'     => $_SERVER["QUERY_STRING"]
+        ]);
+
         $atributes = $course->getAttributes();
 
-        $redirect =  sprintf("http://%s/%s/courses",$_SERVER["HTTP_HOST"], $atributes["id"]);
+        $redirect =  sprintf("http://%s/%s/courses%s",$_SERVER["HTTP_HOST"], $atributes["id"], $queryString);
         header("Location: $redirect");
         exit();
     }

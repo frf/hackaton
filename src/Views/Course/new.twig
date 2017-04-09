@@ -15,7 +15,7 @@
 
 	<div id="result" class="ratio-16-10">
 
-		<div class="email-collector">
+		<div class="email-collector form">
 			<h1>Enter your email address to view this video.</h1>
 			<form>
 
@@ -146,33 +146,6 @@ $(function() {
 		$("#alertCopy").show();
 		copyToClipboard(document.getElementById("embed_text"));
 	});
-	$("#btnClickSaveMail").click(function(){
-		var emailCollector 	= $("#emailCollector").val();
-		var nameCollector 	= $("#nameCollector").val();
-		var lNameCollector 	= $("#lNameCollector").val();
-
-		if(!isValidEmailAddress(emailCollector)){
-
-			$("#msgErroEmail").html("Sorry! Must be a valid email.");
-
-		} else {
-
-			$("#msgErroEmail").html("");
-
-			$.getJSON("/rest/email/new?email=" + emailCollector + "&name=" + nameCollector + "&lastname=" + lNameCollector, function (data) {
-
-				if (data[0].status == 'success') {
-					$("#msgErroEmail").html("");
-					$(".email-collector").hide();
-				};
-
-				if (data[0].status == 'error') {
-					$("#msgErroEmail").html(data[0].message);
-				};
-			});
-		}
-	});
-
 });
 
 </script>

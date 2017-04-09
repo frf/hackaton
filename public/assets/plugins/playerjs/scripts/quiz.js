@@ -337,6 +337,33 @@
             return false;
         });
 
+        $("#btnClickSaveMail").click(function(){
+            var emailCollector 	= $("#emailCollector").val();
+            var nameCollector 	= $("#nameCollector").val();
+            var lNameCollector 	= $("#lNameCollector").val();
+
+            if(!isValidEmailAddress(emailCollector)){
+
+                $("#msgErroEmail").html("Sorry! Must be a valid email.");
+
+            } else {
+
+                $("#msgErroEmail").html("");
+
+                $.getJSON("/rest/email/new?email=" + emailCollector + "&name=" + nameCollector + "&lastname=" + lNameCollector, function (data) {
+
+                    if (data[0].status == 'success') {
+                        $("#msgErroEmail").html("");
+                        $(".email-collector.form").hide();
+                    };
+
+                    if (data[0].status == 'error') {
+                        $("#msgErroEmail").html(data[0].message);
+                    };
+                });
+            }
+        });
+
         // Add the rows to the captions dict.
         $(document).on('blur', '#captions form .questions', function(){
             var $parent = $(this);

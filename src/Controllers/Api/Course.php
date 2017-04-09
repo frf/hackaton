@@ -104,6 +104,7 @@ class Course extends Controller
     }
 
     public function saveQuestions($request, $response, $args){
+        var_dump($request->getParams());
         $result = array(
             "status" => "ok"
         );
