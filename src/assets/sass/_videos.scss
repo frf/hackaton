@@ -1,4 +1,4 @@
-.result{
+#result{
 	position: relative;
 }
 .resp{
@@ -14,23 +14,34 @@
 	}
 }
 
+.embedly-embed {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.resp {
+	display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+  padding-top: 62.5%; /* This is your aspect-ratio */
+}
 
 
-video {
-	max-width: 100%;
-	height: auto;
-}
-iframe,
-embed,
-object {
-	max-width: 100%;
-}
 
-.vendor {
-	padding: 2%;
-	background: #d1eed1;
-	margin-bottom: 2em;
-}
-.unsupported {
-	background: #fddfde;
+
+.email-collector{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 100;
 }

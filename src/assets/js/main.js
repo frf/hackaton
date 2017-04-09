@@ -8,4 +8,5 @@ jQuery(document).ready(function($) {
 
 	// Target your .container, .wrapper, .post, etc.
      $('iframe[src*="youtube"]').parent().fitVids();
+	 $('#results').fitVids();
 });

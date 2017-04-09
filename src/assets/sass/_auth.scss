@@ -74,19 +74,26 @@
 	}
 
 
-	.btn-primary{ background: $turquoise;}
-	.btn{ @include border-radius(4px);
-		&:focus {
-			outline: none !important;
-			box-shadow: none;
-		}
-	}
-	.btn-lg{
-		padding: 24px;
-		font-size: 16px;
+
+
+}
+.btn{ @include border-radius(4px);
+	&:focus {
+		outline: none !important;
+		box-shadow: none;
 	}
 }
+.btn-lg{
+	padding: 24px;
+	font-size: 16px;
+}
 
+.btn-md{
+	padding: 16px;
+	font-size: 16px;
+}
+
+.btn-primary{ background: $turquoise;}
 .btn-rounded{
 	border:1px solid $purple;
 	color: $purple;

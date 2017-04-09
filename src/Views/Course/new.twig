@@ -6,7 +6,7 @@
 	{% block sidebar %}{% endblock %}
 {% endif %}
 {% block assetsHeader %}
-
+<script src="/assets/js/libs.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -20,9 +20,24 @@
 		<a href="#" data-toggle="offcanvas" class=""><i class="fa fa-navicon"></i> Edit vídeo</a>
 
 	</div>
+	<!-- This iframe will always fill the parent width, but will remain at 16:10 aspect ratio -->
 
-	<div id="result">
+	<div id="result" class="ratio-16-10">
+
+		<div class="email-collector hidden">
+			<h1>Text</h1>
+			<form class="" action="index.html" method="post">
+				<div class="form-group">
+					<label for="name-id">Form Title</label>
+					<input type="text" name="" value="" class="form-control">
+				</div>
+				<input type="submit" name="" value="Subscribe" class="btn btn-md btn-block btn-primary">
+			</form>
+		</div>
 	</div>
+
+
+
 
 	<div id="captions">
 		<form method="get" action="" class="">
@@ -59,7 +74,7 @@
 {% endblock %}
 
 {% block assetsFooter %}
-<script src="/assets/plugins/playerjs/scripts/libs/jquery.js"></script>
+
 
 <script src="http://cdn.embed.ly/jquery.embedly-3.1.1.min.js"></script>
 
