@@ -4,10 +4,12 @@ use Thinkific\Middleware\AuthenticationMiddleware;
 use Thinkific\Middleware\GuestMiddleware;
 use Thinkific\Controllers\Api\User;
 
+$app->get('/{id}/courses/emb', 'Course:embedded');
+
 $app->group('/rest', function () use ($app){
     $app->get('/users/{id}', 'ApiUser:getUser');
     $app->get('/email/new', 'ApiEmail:new');
-    $app->get('/{id}/courses/embedded', 'ApiCourse:getEmbedded');
+    $app->get('/{id}/courses/embedded', 'ApiCourse:loadEmbedded');
 });
 
 

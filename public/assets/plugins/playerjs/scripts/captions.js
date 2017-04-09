@@ -1,7 +1,7 @@
 /*global jQuery:true, playerjs:true */
 (function($, document){
 
-  var player = null,
+    var player = null,
     captions = {};
 
   var timeupdate = function(data){

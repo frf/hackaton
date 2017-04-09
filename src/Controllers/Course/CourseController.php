@@ -30,6 +30,32 @@ class CourseController extends Controller
         exit();
     }
 
+    public function embedded($request, $response, $args){
+
+        if (isset($_SERVER["QUERY_STRING"])){
+            $courseMeta = CourseMeta::create([
+                'course_id' => $args["id"],
+                'module_id' => 1,
+                'key'       => 'query_string',
+                'value'     => $_SERVER["QUERY_STRING"]
+            ]);
+        } else {
+            $courseMeta = CourseMeta::where('course_id', $args["id"])->where('key','query_string')->first();
+            if(isset($courseMeta->value)){
+                $redirect = "http://" . $_SERVER["HTTP_HOST"] . $_SERVER["PATH_INFO"] . "?" . $courseMeta->value;
+                echo $redirect;
+                header("Location: $redirect");
+                exit();
+            }
+        }
+
+        $host = "http://" . $_SERVER["HTTP_HOST"] . "/" . $args["id"] . "/courses/emb";
+        $embedText = "<iframe width=\"560\" height=\"315\" src=\"$host\" frameborder=\"0\" allowfullscreen></iframe>";
+
+
+        return $this->getView()->render($response, 'Course/embedded.twig');
+    }
+
     public function view($request, $response, $args){
 
         if (isset($_SERVER["QUERY_STRING"])){
@@ -49,7 +75,7 @@ class CourseController extends Controller
             }
         }
 
-        $host = "http://" . $_SERVER["HTTP_HOST"] . "/" . $args["id"] . "/courses";
+        $host = "http://" . $_SERVER["HTTP_HOST"] . "/" . $args["id"] . "/courses/emb";
         $embedText = "<iframe width=\"560\" height=\"315\" src=\"$host\" frameborder=\"0\" allowfullscreen></iframe>";
 
 
