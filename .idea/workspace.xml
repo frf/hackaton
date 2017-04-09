@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="- Created the new course page">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controllers/Api/Email.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Models/CourseMeta.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Models/Email.php" />
+    <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/app.php" afterPath="$PROJECT_DIR$/bootstrap/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/captions.js" afterPath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/captions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" afterPath="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Validation/Rules/EmailAvailable.php" afterPath="$PROJECT_DIR$/src/Validation/Rules/EmailAvailable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Course/new.twig" afterPath="$PROJECT_DIR$/src/Views/Course/new.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/route.php" afterPath="$PROJECT_DIR$/src/route.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -929,11 +920,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491696585760</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- Created the new course page">
+      <created>1491712786485</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1491712786485</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44382000" />
+    <option name="totallyTimeSpent" value="44394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
