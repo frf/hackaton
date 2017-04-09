@@ -1,14 +1,20 @@
-<nav class="navbar top-bar">
+{% if authentication.check %}
+	<nav class="navbar top-bar">
 
 	<div class="container-fluid">
 		<div class="navbar-header">
-
 			<a class="navbar-brand" href="{{ path_for('home') }}">
 				<img src="{{ settings.logo }}" srcset="{{ settings.logo2x }} 2x">
 			</a>
-
 		</div>
-		{% if authentication.check %}
+
+
+
+		<ul class="nav navbar-nav">
+			<li class="made-by">
+				Made with <i class="fa fa-coffee"></i> on <a href="http://www.vanhack.com/hackathon/" target="_blank">vanHackthon</a> by <a href="https://github.com/thiagofalencar" target="_blank">@thiagofalencar</a> and <a href="http://hugomedeiros.com" target="_blank">@hugomedeiros</a>
+			</li>
+		</ul>
 
 
 
