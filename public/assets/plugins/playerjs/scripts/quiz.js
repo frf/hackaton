@@ -353,5 +353,4 @@
             }
         });
     });
-    $(".email-collector").hide();
 })(jQuery, document);
