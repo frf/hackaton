@@ -130,7 +130,7 @@
         });
     }
 
-    // URL inpute
+    // URL inpte
     var $url = $('#url');
 
     // Set up all the actions.
