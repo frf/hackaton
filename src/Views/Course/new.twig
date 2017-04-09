@@ -67,20 +67,25 @@
 			<div class="col-sm-4">
 				<a href="#" class="play">Restart</a>
 				<a href="#embed" id="click_embed">Embed</a>
-            </div>
-            <a href="#" class="share">
-				</a><a href="#" id="add">Add another caption <i class="fa fa-plus"></i></a>
 			</div>
+			<a href="#" class="share">
+			</a><a href="#" id="add">Add another caption <i class="fa fa-plus"></i></a>
 		</div>
-		<div class="row caption-actions"  style="display: block;"><div class="col-sm-12" id="share"></div></div>
-		<div class="row caption-actions"  style="display: block;">
-            <a name="embed"></a>
-            <div class="col-sm-12" id="embed" style="display:none">
-                <textarea class="form-control" id="embed_text" >{{ embed }}</textarea>
-                <small id="alertCopy" style="display:none">Text copied</small>
-            </div>
-        </div>
 	</div>
+
+	<div class="row caption-actions"  style="display: block;">
+		<a name="embed"></a>
+		<div class="col-sm-12" id="embed" style="display:none">
+			<textarea class="form-control" id="embed_text" >{{ embed }}</textarea>
+			<small id="alertCopy" style="display:none">Text copied</small>
+		</div>
+	</div>
+
+	<div class="row caption-actions share"  style="display: block;">
+		<div class="col-sm-12" id="share">
+		</div>
+	</div>
+</div>
 
 </div>
 
@@ -115,13 +120,13 @@ $("#share").jsSocials({
 
 
 $(function() {
-    $("#click_embed").click(function(){
-        $("#embed").show();
-    });
-    $("#embed_text").click(function(){
-        $("#alertCopy").show();
-        copyToClipboard(document.getElementById("embed_text"));
-    });
+	$("#click_embed").click(function(){
+		$("#embed").show();
+	});
+	$("#embed_text").click(function(){
+		$("#alertCopy").show();
+		copyToClipboard(document.getElementById("embed_text"));
+	});
 	$("#btnClickSaveMail").click(function(){
 		var emailCollector 	= $("#emailCollector").val();
 		var nameCollector 	= $("#nameCollector").val();
