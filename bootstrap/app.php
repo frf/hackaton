@@ -83,6 +83,10 @@ $container['ApiUser'] = function ($container) {
     return new \Thinkific\Controllers\Api\User($container);
 };
 
+$container['ApiEmail'] = function ($container) {
+    return new \Thinkific\Controllers\Api\Email($container);
+};
+
 $container['AuthenticationController'] = function ($container) {
 	return new \Thinkific\Controllers\Authentication\AuthenticationController($container);
 };
