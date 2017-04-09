@@ -17,7 +17,9 @@ class Email extends Controller
 
         $returnCode = 200;
         $validation = $this->getValidator()->validate($request, [
-            'email' => Validator::noWhitespace()->notEmpty()->email()->emailAvailable()
+            'email'     => Validator::noWhitespace()->notEmpty()->email(),
+            'name'      => Validator::noWhitespace()->notEmpty(),
+            'lname'     => Validator::notEmpty()
         ]);
 
         if ($validation->failed()){
@@ -28,8 +30,10 @@ class Email extends Controller
         }
 
         if (!isset($result)){
-            $email = EmailModel::firstOrCreate([
-                'email' => $request->getParam('email')
+            $email = EmailModel::firstOrNew([
+                'email'     => $request->getParam('email'),
+                'name'      => $request->getParam('name'),
+                'lastname'  => $request->getParam('lname')
             ]);
             $result[] = array(
                 "status"    => "success",

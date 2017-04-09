@@ -6,6 +6,8 @@ session_start();
 
 require __DIR__ . '/../vendor/autoload.php';
 
+define('APP_URL', "localhost");
+
 $app = new \Slim\App([
 	'settings' 	=> [
 		'displayErrorDetails' => true,
