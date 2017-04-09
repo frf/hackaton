@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controllers/Api/Course.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/databaseScript.sql" afterPath="$PROJECT_DIR$/db/databaseScript.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/app.php" afterPath="$PROJECT_DIR$/bootstrap/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php" afterPath="$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/route.php" afterPath="$PROJECT_DIR$/src/route.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +21,8 @@
       <file leaf-file-name="route.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+            <state relative-caret-position="189">
+              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="28" />
               <folding>
                 <element signature="e#7#57#0#PHP" expanded="true" />
               </folding>
@@ -30,9 +33,21 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-733">
-              <caret line="47" column="49" lean-forward="false" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+            <state relative-caret-position="357">
+              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthenticationController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="e#55#92#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,10 +65,32 @@
       <file leaf-file-name="Email.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Email.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="312">
               <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#43#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Course.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Models/Course.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/Course/CourseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="45" column="113" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="113" />
+              <folding>
+                <element signature="e#46#83#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,55 +106,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="new.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="1109">
+              <caret line="89" column="60" lean-forward="false" selection-start-line="89" selection-start-column="60" selection-end-line="89" selection-end-column="60" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <marker date="1491714663000" expanded="true" signature="151:176" ph="{% block assetsHeader ...%}" />
+                <marker date="1491714663000" expanded="true" signature="2710:2725" ph="{% block assetsFooter ...%}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Views/json.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticationController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/Api/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
-              <folding>
-                <element signature="e#43#72#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Email.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Models/Email.php">
+      <file leaf-file-name="Course.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Course.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -172,7 +178,6 @@
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/assets/sass/style.scss" />
         <option value="$PROJECT_DIR$/src/Views/Templates/navigation.twig" />
-        <option value="$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php" />
         <option value="$PROJECT_DIR$/src/Views/Authentication/authentication.twig" />
         <option value="$PROJECT_DIR$/src/Views/Authentication/signin.twig" />
         <option value="$PROJECT_DIR$/src/Views/Authentication/signup.twig" />
@@ -180,12 +185,14 @@
         <option value="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" />
         <option value="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/captions.js" />
         <option value="$PROJECT_DIR$/src/Models/CourseMeta.php" />
-        <option value="$PROJECT_DIR$/bootstrap/app.php" />
-        <option value="$PROJECT_DIR$/src/route.php" />
         <option value="$PROJECT_DIR$/src/Models/Email.php" />
         <option value="$PROJECT_DIR$/src/Validation/Rules/EmailAvailable.php" />
         <option value="$PROJECT_DIR$/src/Controllers/Api/Email.php" />
         <option value="$PROJECT_DIR$/src/Views/Course/new.twig" />
+        <option value="$PROJECT_DIR$/src/route.php" />
+        <option value="$PROJECT_DIR$/src/Controllers/Api/Course.php" />
+        <option value="$PROJECT_DIR$/bootstrap/app.php" />
+        <option value="$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php" />
       </list>
     </option>
   </component>
@@ -457,28 +464,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Course" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Thinkific" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Thinkific" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Validation" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -538,6 +523,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thinkific" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Thinkific" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Course" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -662,13 +669,15 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/assets/.DS_Store</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/public/assets/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/assets/js/main.min.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Views/Course/new.twig</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Views/Templates/navigation.twig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Views/Templates/page.twig</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Views/Templates/sidebar-tools.twig</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/assets/js/main.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/assets/sass/_auth.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/assets/sass/_general.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/assets/sass/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/assets/sass/_videos.scss</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -676,6 +685,144 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/.bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/AUTHORS.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/LICENSE.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/dist/core.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.min.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.slim.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.slim.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/dist/jquery.slim.min.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/external/sizzle/LICENSE.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/external/sizzle/dist/sizzle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/external/sizzle/dist/sizzle.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/external/sizzle/dist/sizzle.min.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/.eslintrc.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/jsonp.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/load.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/parseXML.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/script.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/var/location.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/var/nonce.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/var/rquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/ajax/xhr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/attributes.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/attributes/attr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/attributes/classes.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/attributes/prop.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/attributes/support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/attributes/val.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/callbacks.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/DOMEval.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/access.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/init.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/nodeName.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/parseHTML.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/ready-no-deferred.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/ready.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/readyException.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/stripAndCollapse.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/core/var/rsingleTag.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/addGetHookIf.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/adjustCSS.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/curCSS.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/hiddenVisibleSelectors.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/showHide.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/var/cssExpand.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/var/getStyles.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/var/isHiddenWithinTree.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/var/rmargin.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/var/rnumnonpx.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/css/var/swap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/data.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/data/Data.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/data/var/acceptData.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/data/var/dataPriv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/data/var/dataUser.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/deferred.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/deferred/exceptionHook.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/deprecated.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/dimensions.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/effects.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/effects/Tween.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/effects/animatedSelector.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/event.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/event/ajax.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/event/alias.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/event/focusin.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/event/support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/event/trigger.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/exports/amd.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/exports/global.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/jquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/_evalUrl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/buildFragment.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/getAll.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/setGlobalEval.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/var/rcheckableType.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/var/rscriptType.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/var/rtagName.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/manipulation/wrapMap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/offset.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/queue.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/queue/delay.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/selector-native.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/selector-sizzle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/selector.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/serialize.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/traversing.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/traversing/findFilter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/traversing/var/dir.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/traversing/var/rneedsContext.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/traversing/var/siblings.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/ObjectFunctionString.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/arr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/class2type.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/concat.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/document.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/documentElement.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/fnToString.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/getProto.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/hasOwn.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/indexOf.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/pnum.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/push.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/rcssNum.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/rnothtmlwhite.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/slice.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/support.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/var/toString.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jquery/src/wrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/.bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/.npmignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/dist/jssocials-theme-classic.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/dist/jssocials-theme-flat.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/dist/jssocials-theme-minima.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/dist/jssocials-theme-plain.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/dist/jssocials.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/dist/jssocials.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/dist/jssocials.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/src/jssocials.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/src/jssocials.shares.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/styles/_shares.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/styles/jssocials-theme-classic.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/styles/jssocials-theme-flat.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/styles/jssocials-theme-minima.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/styles/jssocials-theme-plain.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/bower_components/jssocials/styles/jssocials.scss</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -683,6 +830,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/assets/js/libs/jquery.fitvids.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -942,11 +1090,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491713217445</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- Database script updated!">
+      <created>1491713399896</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1491713399896</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44761000" />
+    <option name="totallyTimeSpent" value="46110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
@@ -955,14 +1110,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1002,7 +1157,8 @@
     <MESSAGE value="- Created the page authentication unified (Singin / Singout)" />
     <MESSAGE value="- Created the new course page" />
     <MESSAGE value="- Created method rest to register email" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Created method rest to register email" />
+    <MESSAGE value="- Database script updated!" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Database script updated!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1018,14 +1174,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/Templates/page.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1282,14 +1430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Models/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/sass/_general.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1306,16 +1446,6 @@
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/Course/CourseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding>
-            <element signature="e#46#83#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1363,24 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="e#7#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Views/json.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1405,6 +1517,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1109">
+          <caret line="89" column="60" lean-forward="false" selection-start-line="89" selection-start-column="60" selection-end-line="89" selection-end-column="60" />
+          <folding>
+            <marker date="1491714663000" expanded="true" signature="151:176" ph="{% block assetsHeader ...%}" />
+            <marker date="1491714663000" expanded="true" signature="2710:2725" ph="{% block assetsFooter ...%}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Validation/Rules/EmailAvailable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1413,30 +1546,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Email.php">
+    <entry file="file://$PROJECT_DIR$/src/Controllers/Course/CourseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="45" column="113" lean-forward="false" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="113" />
           <folding>
-            <element signature="e#43#80#0#PHP" expanded="true" />
+            <element signature="e#46#83#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="e#7#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Models/Course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/Api/Course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-733">
-          <caret line="47" column="49" lean-forward="false" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+        <state relative-caret-position="357">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
+    <entry file="file://$PROJECT_DIR$/src/Controllers/Authentication/AuthenticationController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#55#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

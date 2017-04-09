@@ -7,6 +7,7 @@ use Thinkific\Controllers\Api\User;
 $app->group('/rest', function () use ($app){
     $app->get('/users/{id}', 'ApiUser:getUser');
     $app->get('/email/new', 'ApiEmail:new');
+    $app->get('/{id}/courses/embedded', 'ApiCourse:getEmbedded');
 });
 
 

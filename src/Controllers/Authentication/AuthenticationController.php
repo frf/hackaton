@@ -11,7 +11,7 @@ class AuthenticationController extends Controller
 {
 	
 	public function getSignUp($request, $response){
-		return $this->getView()->render($response, 'Authentication/signup.twig');
+		return $this->getView()->render($response, 'Authentication/signin.twig');
 	}
 
 	public function postSignUp($request, $response){
@@ -23,7 +23,7 @@ class AuthenticationController extends Controller
 		]);
 
 		if ($validation->failed()){
-			return $response->withRedirect($this->getRouter()->pathFor('authentication.signup'));
+			return $response->withRedirect($this->getRouter()->pathFor('authentication.signin'));
 		}
 
 		$user = User::create([

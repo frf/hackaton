@@ -15,7 +15,7 @@ $app = new \Slim\App([
 			'driver' 	=> 'mysql',
 			'host'		=> 'localhost',
 			'database'	=> 'thinkific',
-			'username'		=> 'root',
+			'username'	=> 'root',
 			'password'	=> 'root',
 			'charset'	=> 'utf8',
 			'collation' => 'utf8_unicode_ci',
@@ -85,6 +85,10 @@ $container['ApiUser'] = function ($container) {
 
 $container['ApiEmail'] = function ($container) {
     return new \Thinkific\Controllers\Api\Email($container);
+};
+
+$container['ApiCourse'] = function ($container) {
+    return new \Thinkific\Controllers\Api\Course($container);
 };
 
 $container['AuthenticationController'] = function ($container) {
