@@ -64,27 +64,42 @@
 
 		</form>
 		<div class="row caption-actions" style="display: block;">
-			<div class="col-sm-4">
-				<a href="#" class="play">Restart</a>
-				<a href="#embed" id="click_embed">Embed</a>
+
+			<div class="col-sm-12 box-spacing">
+			<a href="#" id="add" class="btn btn-secondary btn-lg btn-block">Add another caption <i class="fa fa-plus"></i></a>
 			</div>
-			<a href="#" class="share">
-			</a><a href="#" id="add">Add another caption <i class="fa fa-plus"></i></a>
+
+			<div class="col-sm-12 box-action">
+				<div class="wrapper">
+					<a href="#" class="play btn btn-default"><i class="fa fa-refresh"></i> Restart</a>
+					<a href="#embed" id="click_embed" class="btn btn-default"><i class="fa fa-code"></i> Embed</a>
+
+					<div class="row caption-actions">
+						<a name="embed"></a>
+						<div class="col-sm-12" id="embed" style="display:none">
+							<textarea class="form-control" id="embed_text" >{{ embed }}</textarea>
+							<small id="alertCopy" style="display:none">Text copied</small>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-sm-12 share">
+				<h3>Share this video</h3>
+
+				<div class="row caption-actions share-box">
+					<div class="col-sm-12" id="share">
+					</div>
+				</div>
+
+			</div>
+
+
 		</div>
 	</div>
 
-	<div class="row caption-actions"  style="display: block;">
-		<a name="embed"></a>
-		<div class="col-sm-12" id="embed" style="display:none">
-			<textarea class="form-control" id="embed_text" >{{ embed }}</textarea>
-			<small id="alertCopy" style="display:none">Text copied</small>
-		</div>
-	</div>
 
-	<div class="row caption-actions share"  style="display: block;">
-		<div class="col-sm-12" id="share">
-		</div>
-	</div>
 </div>
 
 </div>
