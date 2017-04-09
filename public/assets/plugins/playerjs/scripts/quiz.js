@@ -2,14 +2,14 @@
 
 (function($, document){
 
-    var data = [
+    var dataJson = [
         {
             "Video" : "https://www.youtube.com/embed/9hIQjrMHTv4",
             "Questions": [
                 {
+                    "id"    : 1,
                     "title" : "Quem descobriu o Brasil?",
                     "start" : 1,
-                    "end"   : 200,
                     "answer": {
                         "a": "Pedro Alvares Cabral",
                         "b": "Pedro Alvares Cabrel",
@@ -18,9 +18,9 @@
                     }
                 },
                 {
+                    "id"    : 2,
                     "title" : "Quem descobriu o Brasil?",
                     "start" : 2,
-                    "end"   : 200,
                     "answer": {
                         "a": "Pedro Alvares Cabral",
                         "b": "Pedro Alvares Cabrel",
@@ -29,9 +29,9 @@
                     }
                 },
                 {
+                    "id"    : 3,
                     "title" : "Quem descobriu o Brasil?",
                     "start" : 3,
-                    "end"   : 200,
                     "answer": {
                         "a": "Pedro Alvares Cabral",
                         "b": "Pedro Alvares Cabrel",
@@ -40,9 +40,9 @@
                     }
                 },
                 {
+                    "id"    : 4,
                     "title" : "Quem descobriu o Brasil?",
                     "start" : 100,
-                    "end"   : 200,
                     "answer": {
                         "a": "Pedro Alvares Cabral",
                         "b": "Pedro Alvares Cabrel",
@@ -51,9 +51,9 @@
                     }
                 },
                 {
+                    "id"    : 5,
                     "title" : "Quem descobriu o Brasil?",
                     "start" : 100,
-                    "end"   : 200,
                     "answer": {
                         "a": "Pedro Alvares Cabral",
                         "b": "Pedro Alvares Cabrel",
@@ -62,9 +62,9 @@
                     }
                 },
                 {
+                    "id"    : 6,
                     "title" : "Quem descobriu o Brasil?",
                     "start" : 100,
-                    "end"   : 200,
                     "answer": {
                         "a": "Pedro Alvares Cabral",
                         "b": "Pedro Alvares Cabrel",
@@ -73,9 +73,9 @@
                     }
                 },
                 {
+                    "id"    : 7,
                     "title" : "Quem descobriu o Brasil?",
                     "start" : 100,
-                    "end"   : 200,
                     "answer": {
                         "a": "Pedro Alvares Cabral",
                         "b": "Pedro Alvares Cabrel",
@@ -86,63 +86,79 @@
             ]
         }
     ];
-    var bannerQuestion = function(data) {
+
+    var bannerQuestion = function(i) {
+
+
+        $.each(dataJson[0], function (index, item) {
+            console.log(item);
+        });
 
         var data = {
-            "title" : "Quem descobriu o Brasil?",
-            "start" : 100,
+            "id"    : i,
+            "title" : "Question?",
+            "start" : 0,
             "answer": {
-                "a": "Pedro Alvares Cabral",
-                "b": "Pedro Alvares Cabrel",
-                "c": "Pedro Alvares Cabril",
-                "d": "Pedro Alvares Cabrol"
+                "a": "",
+                "b": "",
+                "c": "",
+                "d": ""
             }
         };
+        if ($('.email-collector.question').size() == 0) {
 
-        $('#result').prepend([
-            '<div class="email-collector" style="text-align: left; font-size: 1vw;">',
-            '<h1>'+data.title+'</h1>',
-            '<form>',
-            '<div class="row name">',
-            '<div class="col-sm-6">',
-            '<label class="radio-inline col-sm-12">',
-            '<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a"> A ) '+ data.answer.a,
-            '</label>',
-            '</div>',
-            '<div class="col-sm-6">',
-            '<label class="radio-inline col-sm-12">',
-            '<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="b"> B ) '+ data.answer.b,
-            '</label>',
-            '</div>',
-            '</div>',
-            '<div class="row name">',
-            '<div class="col-sm-6">',
-            '<label class="radio-inline col-sm-12">',
-            '<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="c"> C ) '+ data.answer.c,
-            '</label>',
-            '</div>',
-            '<div class="col-sm-6">',
-            '<label class="radio-inline col-sm-12">',
-            '<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="d"> D ) '+ data.answer.d,
-            '</label>',
-            '</div>',
-            '</div>',
-            '<div class="form-group">',
-            '<input type="button" name="btnSaveQuestion" id="btnSaveQuestion" value="'+data.id+'" class="btn btn-md btn-block btn-primary text-uppercase">',
-            '<input type="hidden" name="id" id="btnSaveQuestion" value="'+data.id+'" class="btn btn-md btn-block btn-primary text-uppercase">',
-            '</form>',
-            '</div>'
-        ].join(''));
+            $('#result').prepend([
+                '<div class="email-collector question" style="text-align: left; font-size: 1vw;">',
+                '<h1>' + data.title + '</h1>',
+                '<form action="#" id="question_' + i + '">',
+                '<div class="row name">',
+                '<div class="col-sm-6">',
+                '<label class="radio-inline col-sm-12">',
+                '<input type="radio" name="answer_option" id="answer_option_a" checked="checked" value="a" > A ) ' + data.answer.a,
+                '</label>',
+                '</div>',
+                '<div class="col-sm-6">',
+                '<label class="radio-inline col-sm-12">',
+                '<input type="radio" name="answer_option" id="answer_option_b" value="b"> B ) ' + data.answer.b,
+                '</label>',
+                '</div>',
+                '</div>',
+                '<div class="row name">',
+                '<div class="col-sm-6">',
+                '<label class="radio-inline col-sm-12">',
+                '<input type="radio" name="answer_option" id="answer_option_c" value="c"> C ) ' + data.answer.c,
+                '</label>',
+                '</div>',
+                '<div class="col-sm-6">',
+                '<label class="radio-inline col-sm-12">',
+                '<input type="radio" name="answer_option" id="answer_option_d" value="d"> D ) ' + data.answer.d,
+                '</label>',
+                '</div>',
+                '</div>',
+                '<div class="form-group">',
+                '<input type="button" name="btnSaveQuestion" id="btnSaveQuestion" value="save" class="btn btn-md btn-block btn-primary saveQuestion text-uppercase">',
+                '<input type="hidden" name="id" id="id" value="' + data.id + '" class="btn btn-md btn-block btn-primary text-uppercase">',
+                '<input type="hidden" name="time" id="time" value="' + data.start + '" class="btn btn-md btn-block btn-primary text-uppercase">',
+                '</form>',
+                '</div>'
+            ].join(''));
+        };
 
     };
-    var addQuestion = function(data){
+    var addQuestion = function(data,i){
 
         // In the beginning we can pass values into the row.
+
+        if (i == undefined){
+            i = $('#captions form .questions').size() + 1;
+        }
+
+        i++;
 
         if (data === undefined){
             data = {
                 "title": "",
-                "time": 0,
+                "start": 0,
                 "answer": {
                     "a": "",
                     "b": "",
@@ -154,59 +170,64 @@
 
         var answers = data.answer;
 
-        $('#captions form').append([
-            '<div class="row questions">',
-            '<div class="form-group col-sm-11">',
-            '<label>Question</label>',
-            '<input type="text" class="form-control" placeholder="Put your question here!" value="'+data.title+'">',
-            '</div>',
-            '<div class="form-group col-sm-1">',
-            '<label>Time</label>',
-            '<input type="text" class="time form-control" placeholder="0" value="'+data.start+'">',
-            '</div>',
-            '<div class="form-group col-sm-12">',
-            '<label>Answers</label>',
-            '</div>',
-            '<div class="answers">',
-            '<div class="form-group col-sm-6">',
-            '<label>A)</label>',
-            '<input type="text" class="caption form-control" placeholder="Answer (A)" value="'+answers.a+'">',
-            '</div>',
-            '<div class="form-group col-sm-6">',
-            '<label>B)</label>',
-            '<input type="text" class="caption form-control" placeholder="Answer (B)" value="'+answers.b+'">',
-            '</div>',
-            '<div class="form-group col-sm-6">',
-            '<label>C)</label>',
-            '<input type="text" class="caption form-control" placeholder="Answer (C)" value="'+answers.c+'">',
-            '</div>',
-            '<div class="form-group col-sm-6">',
-            '<label>D)</label>',
-            '<input type="text" class="caption form-control" placeholder="Answer (D)" value="'+answers.d+'">',
-            '</div>',
-            '</div>',
-            '<div class="form-group col-sm-12" style="text-align: right">',
-            '<button type="submit" class="btn btn-danger btn-rounded remove">Remove</button>',
-            '</div>',
-            '<hr>',
-            '</div>'
-        ].join(''));
+            $('#captions form').append([
+                '<div class="row questions">',
+                '<div class="form-group col-sm-11">',
+                '<label>Question - ' + i + '</label>',
+                '<input type="text" class="form-control" placeholder="Put your question here!" value="' + data.title + '">',
+                '</div>',
+                '<div class="form-group col-sm-1">',
+                '<label>Time</label>',
+                '<input type="text" class="time form-control" placeholder="0" value="' + data.start + '">',
+                '</div>',
+                '<div class="form-group col-sm-12">',
+                '<label>Answers</label>',
+                '</div>',
+                '<div class="answers">',
+                '<div class="form-group col-sm-6">',
+                '<label>A)</label>',
+                '<input type="text" class="caption form-control" placeholder="Answer (A)" value="' + answers.a + '">',
+                '</div>',
+                '<div class="form-group col-sm-6">',
+                '<label>B)</label>',
+                '<input type="text" class="caption form-control" placeholder="Answer (B)" value="' + answers.b + '">',
+                '</div>',
+                '<div class="form-group col-sm-6">',
+                '<label>C)</label>',
+                '<input type="text" class="caption form-control" placeholder="Answer (C)" value="' + answers.c + '">',
+                '</div>',
+                '<div class="form-group col-sm-6">',
+                '<label>D)</label>',
+                '<input type="text" class="caption form-control" placeholder="Answer (D)" value="' + answers.d + '">',
+                '<input type="hidden" name="id" id="id" value="' + data.id + '">',
+                '</div>',
+                '</div>',
+                '<div class="form-group col-sm-12" style="text-align: right">',
+                '<button type="submit" class="btn btn-danger btn-rounded remove">Remove</button>',
+                '</div>',
+                '<hr>',
+                '</div>'
+            ].join(''));
     };
+    var current_time = 0;
 
     var player = null,
         captions = {};
 
     var timeupdate = function(data){
         var seconds = Math.floor(data.seconds);
-        if (captions[seconds] !== undefined){
-            bannerQuestion(seconds);
+        if (current_time != seconds && seconds > 0 ) {
+            if (captions[seconds] !== undefined){
+                    if (captions[seconds] == 0 ){
+                        player.pause();
+                        bannerQuestion(seconds);
+                    }
+            }
+            current_time = seconds;
         }
     };
 
     var embed = function(url){
-
-        // reset captions.
-        captions = {};
 
         // Grab the data from Embedly's API.
         return $.embedly.oembed(url, {query: {scheme: 'http'}})
@@ -256,8 +277,8 @@
                 return i;
             }, {});
 
-        var questions = data[0]["Questions"],
-            url = data[0]["Video"];
+        var questions = dataJson[0]["Questions"],
+            url = dataJson[0]["Video"];
 
         //If we got a URL, then we need to build out the rows.
         $('#url').val(url);
@@ -266,14 +287,13 @@
             .done(function(){
                 // Go embed the URL
                 $.each(questions, function(i, item) {
-                    addQuestion(this);
+                    addQuestion(this,i);
                     $('#captions form input').trigger('blur');
                 });
 
                 // Autoplay
                 player.on('ready', function(){
                     player.play();
-                    player.mute();
                 });
             });
 
@@ -282,10 +302,35 @@
             $(this).parents('.row').get(0).remove();
             return false;
         });
-        var caption = {};
+
+        function objectifyForm(formArray) {//serialize data function
+
+            var returnArray = {};
+            for (var i = 0; i < formArray.length; i++){
+                if (formArray[i]['type'] == 'radio'){
+                    if (formArray[i]['checked']){
+                        returnArray[formArray[i]['name']] = formArray[i]['value'];
+                    }
+                } else {
+                    returnArray[formArray[i]['name']] = formArray[i]['value'];
+                }
+                // checked="checked"
+            }
+            return returnArray;
+        }
+
+        $(document).on('click', '.saveQuestion', function(event){
+            var form = $(".email-collector.question form input");
+            var formRes = objectifyForm(form);
+            captions[formRes.time] = formRes;
+            console.log(captions[formRes.time]);
+            $(".email-collector.question").remove();
+            player.play();
+            return false;
+        });
+
         // Add the rows to the captions dict.
         $(document).on('blur', '#captions form .questions', function(){
-
             var $parent = $(this);
             var time = $parent.find('.time').val();
 
@@ -293,7 +338,9 @@
                 var p = time;
                 // It's a range.
                 if (p.length > 0){
-                    captions[parseInt(time, 10)] = time;
+                    if (captions[parseInt(time, 10)] == undefined){
+                        captions[parseInt(time, 10)] = 0;
+                    }
                 }
             }
         });
