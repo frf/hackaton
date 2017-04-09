@@ -28,11 +28,13 @@ class Email extends Controller
         }
 
         if (!isset($result)){
-            $email = EmailModel::firstOrCreate([
-                'email' => $request->getParam('email'),
-                'name' => $request->getParam('name'),
-                'lastname' => $request->getParam('lname'),
-            ]);
+            if(EmailModel::where('email', $request->getParam('email'))->count() === 0) {
+                $email = EmailModel::firstOrCreate([
+                    'email' => $request->getParam('email'),
+                    'name' => $request->getParam('name'),
+                    'lastname' => $request->getParam('lname'),
+                ]);
+            }
             $result[] = array(
                 "status"    => "success",
                 "message"   => "Email successfully registered"
