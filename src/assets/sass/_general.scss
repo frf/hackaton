@@ -35,8 +35,28 @@ body {
 			color: $turquoise;
 			padding:5px 15px;
 		}
+
+		.made-by{
+			padding: 5px 30px;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 12px;
+			i.fa { color: $purple; font-size: 20px;}
+			> a {
+				color: $turquoise;
+				display: inline;
+				padding: 2px 5px;
+				@include border-radius(90px);
+				&:hover {
+					background: $purple;
+					color: #fff;
+				}
+			}
+		}
 	}
 	.navbar-right{margin-right: 0;}
+
+
 }
 
 
