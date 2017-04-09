@@ -3,9 +3,98 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
+
 body {
 	font-family: $varela;
 }
+
+.auth{
+	background: url('../images/thinkific_auth_bg.jpg') no-repeat $darkblue;
+	background-size: 756px 607px;
+	background-position: bottom left;
+	height: 100vh;
+	padding: 150px 0;
+
+	h1{ color: $turquoise;
+		max-width: 286px;
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+
+	.brand {padding: 40px 0;
+		h2{
+			color: $turquoise;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.nav-tabs {
+		border: none;
+		margin-bottom: 30px;
+		li{
+			margin-right: 50px;
+			a{
+				background: none;
+				text-transform: uppercase;
+				font-size: 20px;
+				color: rgba(255, 255, 255, 0.3);
+				border: none;
+				padding: 10px 0;
+
+			}
+			&.active{
+				a{
+					background: none;
+					border: none;
+					color: #fff;
+					position: relative;
+
+					&:after{
+						content: "";
+						width: 100%;
+						height: 3px;
+						background: $turquoise;
+						position: absolute;
+						left: 0;
+						bottom: 0px;
+						@include border-radius(90px);
+					}
+				}
+			}
+		}
+
+	}
+
+	.form-group{
+		label{
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.form-control{
+			background: none;
+			border: none;
+			@include border-radius(0);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+			padding: 20px 0;
+			font-size: 16px;
+		}
+	}
+
+
+	.btn-primary{ background: $turquoise;}
+	.btn{ @include border-radius(4px);
+		&:focus {
+			outline: none !important;
+			box-shadow: none;
+		}
+	}
+	.btn-lg{
+		padding: 24px;
+		font-size: 16px;
+	}
+}
+
 .top-bar {
 	border-radius: 0 !important;
 	background: $darkblue;
@@ -28,11 +117,13 @@ body {
 	}
 	.navbar-right{margin-right: 0;}
 }
+
 .btn-rounded{
-	border:1px solid $turquoise;
-	
+	border:1px solid #fff;
+	color: #fff;
 	@include border-radius(90px);
 }
+
 .sidebar {
 	position: relative;
 	width: 20em;

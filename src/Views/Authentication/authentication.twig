@@ -1,2 +1,51 @@
-{% include 'Authentication/signin.twig' %}
-{% include 'Authentication/signup.twig' %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Thinkific</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ base_url() }}/assets/css/style.css">
+</head>
+<body class="auth">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+				<h1>Great Video Learning Experiences.</h1>
+			</div>
+			<div class="col-sm-5">
+
+				<div class="brand">
+					<img src="{{ settings.logo }}" srcset="{{ settings.logo2x }} 2x">
+					<h2>Atlas</h2>
+				</div>
+
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#signin" aria-controls="signin" role="tab" data-toggle="tab">Sign in</a></li>
+					<li role="presentation"><a href="#signup" aria-controls="signup" role="tab" data-toggle="tab">SignUp</a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="signin">
+						{% include 'Authentication/signin.twig' %}
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade" id="signup">
+						{% include 'Authentication/signup.twig' %}
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="{{ base_url() }}/assets/js/main.min.js"></script>
+	</body>
+	</html>
