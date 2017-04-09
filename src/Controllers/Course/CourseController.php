@@ -49,6 +49,10 @@ class CourseController extends Controller
             }
         }
 
-        return $this->getView()->render($response, 'Course/new.twig');
+        $host = "http://" . $_SERVER["HTTP_HOST"] . "/" . $args["id"] . "/courses";
+        $embedText = "<iframe width=\"560\" height=\"315\" src=\"$host\" frameborder=\"0\" allowfullscreen></iframe>";
+
+
+        return $this->getView()->render($response, 'Course/new.twig', ['embed'=>$embedText]);
     }
 }
