@@ -1,8 +1,15 @@
 #result{
 	position: relative;
+	overflow: hidden;
 }
 .resp{
+	display: block;
 	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 56.5%; /* This is your aspect-ratio */
+	margin-bottom: 40px;
+
 	span#caption{
 		display: none;
 		position: absolute;
@@ -27,16 +34,6 @@
 	height: 100%;
 }
 
-.resp {
-	display: block;
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-top: 56.5%; /* This is your aspect-ratio */
-	margin-bottom: 40px;
-}
-
-
 
 
 .email-collector{
@@ -50,4 +47,10 @@
 	color: #fff;
 
 	h1{ font-size: 40px;}
+	.form-control{
+		@include border-radius(4px);
+		color: #666;
+		font-size: 20px;
+		padding: 25px;
+	}
 }
