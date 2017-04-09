@@ -32,7 +32,7 @@ class Email extends Controller
                 $email = EmailModel::firstOrCreate([
                     'email' => $request->getParam('email'),
                     'name' => $request->getParam('name'),
-                    'lastname' => $request->getParam('lname'),
+                    'lastname' => $request->getParam('lastname'),
                 ]);
             }
             $result[] = array(
