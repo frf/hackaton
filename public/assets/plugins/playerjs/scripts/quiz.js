@@ -4,7 +4,6 @@
 
     var dataJson = [
         {
-            "Video" : "https://www.youtube.com/embed/9hIQjrMHTv4",
             "Questions": [
                 {
                     "id"    : 1,
@@ -269,12 +268,9 @@
             }, {});
 
         var questions = dataJson[0]["Questions"],
-            url = dataJson[0]["Video"];
+            url = $('#url').val(initial.url);
 
-        //If we got a URL, then we need to build out the rows.
-        $('#url').val(url);
-
-        embed(url)
+        embed(initial.url)
             .done(function(){
                 // Go embed the URL
                 $.each(questions, function(i, item) {
@@ -323,14 +319,6 @@
                 }
             });
 
-
-//            var emailRegister = function (email) {
-//                $.getJSON( "http://localhost/rest/email/new?email="+email, function(data) {
-//                    if (data[0].status == 'success'){
-//                        $('fazalgo');
-//                    };
-//                });
-//            }
 
             $(".email-collector.question").remove();
             player.play();

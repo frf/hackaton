@@ -85,10 +85,12 @@ class CourseController extends Controller
             }
         }
 
+        $videolUrl = (isset($_GET["url"])) ? $_GET["url"] : "https://www.youtube.com/watch?v=frFNQdQfqwM";
+
         $host = "http://" . $_SERVER["HTTP_HOST"] . "/" . $args["id"] . "/courses/emb";
         $embedText = "<iframe width=\"560\" height=\"315\" src=\"$host\" frameborder=\"0\" allowfullscreen></iframe>";
 
 
-        return $this->getView()->render($response, 'Course/new.twig', ['embed'=>$embedText]);
+        return $this->getView()->render($response, 'Course/new.twig', ['embed'=>$embedText, "videoUrl" => $videolUrl]);
     }
 }
