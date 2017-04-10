@@ -12,6 +12,7 @@ body {
 
 .visibility-hidden{ visibility: hidden;}
 
+.color-purple{ color: $purple; }
 .top-bar {
 	border-radius: 0 !important;
 	background: $darkblue;
@@ -121,4 +122,18 @@ body {
 .btn-white {
 	border-color: #fff;
 	color: #fff;
+}
+
+
+
+.my-videos{
+	list-style-type: none;
+	padding: 0;
+
+	.list-item{
+		border: 1px solid #ccc;
+		padding: 15px 0;
+		@include border-radius(5px);
+		width: 33.3%;
+	}
 }
