@@ -7,6 +7,8 @@ The script to create the database could be found in hackaton/db/databaseScript.s
 
 You can use the built-in PHP server too... `php -S localhost:80 -t /public` in the hackaton folder!
 
+
+
 Any question, please send me an email thiagofalencar@gmail.com.
 ## About us
 
@@ -20,7 +22,10 @@ Portfolio – [hugomedeiros.com](http://hugomedeiros.com)
 # Demo
 [http://www.thinkific.thiagofalencar.com/](http://www.thinkific.thiagofalencar.com/)
 
-# Screenshots
+# Screenshots / Informations
+
+##Securiry
+- Cross-site request forgery
     
 ## Form Validations
 
