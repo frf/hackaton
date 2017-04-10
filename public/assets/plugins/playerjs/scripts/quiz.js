@@ -5,7 +5,8 @@
     var urlDataJson = "http://localhost/rest/"+id+"/courses/questions",
         questionsDB = [],
         currentTime = 0,
-        captions = [];
+        captions = [],
+        email = true;
 
 
     var getData = function () {
