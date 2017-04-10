@@ -35,7 +35,7 @@ class CourseController extends Controller
                 'value'     => $_GET["url"]
             ]);
         }
-        $redirect =  sprintf("http://%s/%s/courses%s",$_SERVER["HTTP_HOST"], $atributes["id"], urlencode($videoUrl));
+        $redirect =  sprintf("http://%s/%s/courses?url=%s",$_SERVER["HTTP_HOST"], $atributes["id"], urlencode($videoUrl));
         header("Location: $redirect");
         exit();
     }
