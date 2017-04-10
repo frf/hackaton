@@ -24,7 +24,7 @@ Portfolio – [hugomedeiros.com](http://hugomedeiros.com)
 
 # Screenshots / Informations
 
-##Securiry
+## Security
 - Cross-site request forgery
     
 ## Form Validations
