@@ -8,6 +8,7 @@
 
 namespace Thinkific\Controllers\Api;
 use Thinkific\Controllers\Controller;
+use Thinkific\Models\CourseMeta;
 
 class Course extends Controller
 {
@@ -17,12 +18,22 @@ class Course extends Controller
     }
 
     public function getQuestions($request, $response, $args){
+
+        $courseItems    = CourseMeta::where("key", "_question")
+                                    ->where("key", "_title")
+                                    ->where("key", "_start")
+                                    ->where("key", "_answer");
+
+        foreach ($courseItems as $courseItem) {
+            echo $courseItem->key;
+        }
+
         $result = array(
-            "Questions" => array(
+            "questions" => array(
                 array(
                     "title" => "Quem descobriu o Brasil?",
                     "id"    => 1,
-                    "start" => 100,
+                    "start" => 1,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
@@ -33,69 +44,14 @@ class Course extends Controller
                 array(
                     "title" => "Quem descobriu o Brasil?",
                     "id"    => 1,
-                    "start" => 100,
+                    "start" => 2,
                     "answer" => array(
                         "a" => "Pedro Alvares Cabral",
                         "b" => "Pedro Alvares Cabrel",
                         "c" => "Pedro Alvares Cabril",
                         "d" => "Pedro Alvares Cabrol",
                     )
-                ),
-                array(
-                    "title" => "Quem descobriu o Brasil?",
-                    "id"    => 1,
-                    "start" => 100,
-                    "answer" => array(
-                        "a" => "Pedro Alvares Cabral",
-                        "b" => "Pedro Alvares Cabrel",
-                        "c" => "Pedro Alvares Cabril",
-                        "d" => "Pedro Alvares Cabrol",
-                    )
-                ),
-                array(
-                    "title" => "Quem descobriu o Brasil?",
-                    "id"    => 1,
-                    "start" => 100,
-                    "answer" => array(
-                        "a" => "Pedro Alvares Cabral",
-                        "b" => "Pedro Alvares Cabrel",
-                        "c" => "Pedro Alvares Cabril",
-                        "d" => "Pedro Alvares Cabrol",
-                    )
-                ),
-                array(
-                    "title" => "Quem descobriu o Brasil?",
-                    "id"    => 1,
-                    "start" => 100,
-                    "answer" => array(
-                        "a" => "Pedro Alvares Cabral",
-                        "b" => "Pedro Alvares Cabrel",
-                        "c" => "Pedro Alvares Cabril",
-                        "d" => "Pedro Alvares Cabrol",
-                    )
-                ),
-                array(
-                    "title" => "Quem descobriu o Brasil?",
-                    "id"    => 1,
-                    "start" => 100,
-                    "answer" => array(
-                        "a" => "Pedro Alvares Cabral",
-                        "b" => "Pedro Alvares Cabrel",
-                        "c" => "Pedro Alvares Cabril",
-                        "d" => "Pedro Alvares Cabrol",
-                    )
-                ),
-                array(
-                    "title" => "Quem descobriu o Brasil?",
-                    "id"    => 1,
-                    "start" => 100,
-                    "answer" => array(
-                        "a" => "Pedro Alvares Cabral",
-                        "b" => "Pedro Alvares Cabrel",
-                        "c" => "Pedro Alvares Cabril",
-                        "d" => "Pedro Alvares Cabrol",
-                    )
-                ),
+                )
             )
         );
 

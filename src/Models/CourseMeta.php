@@ -15,8 +15,8 @@ class CourseMeta extends Model
     protected $fillable = [
         'course_id',
         'module_id',
-        'value',
-        'key'
+        'key',
+        'value'
     ];
 
 }

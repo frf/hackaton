@@ -2,17 +2,29 @@
 
 (function($, document){
 
-    var url = "http://localhost/rest/16/courses/questions";
+    var urlDataJson = "http://localhost/rest/"+id+"/courses/questions",
+        questionsDB = [],
+        currentTime = 0,
+        captions = [];
 
 
-    var bannerQuestion = function(i) {
-
-
-        $.each(dataJson[0]['Questions'], function (index, item) {
-            if (this.start = i){
-                data = this;
-            }
+    var getData = function () {
+        $.getJSON(urlDataJson, function (data) {
+            var questions = data['questions'];
+            $.each(questions, function (i, item) {
+                questionsDB[i]          = questions[i];
+                captions[item.start]    = questions[i];
+                addQuestion(questions[i], i);
+            })
         });
+    };
+
+    var id = $("#id_video").val();
+    var dataJson = getData();
+
+
+
+    var bannerQuestion = function(data, i) {
 
         if ($('.email-collector.question').size() == 0) {
 
@@ -23,24 +35,24 @@
                 '<div class="row name">',
                 '<div class="col-sm-6">',
                 '<label class="radio-inline col-sm-12">',
-                '<input type="radio" name="answer_option" id="answer_option_a" checked="checked" value="a" > A ) ' + data.answer.a,
+                '<input type="radio" class="answer_option" name="answer_option" id="answer_option_a" checked="checked" value="a" > A ) ' + data.answer.a,
                 '</label>',
                 '</div>',
                 '<div class="col-sm-6">',
                 '<label class="radio-inline col-sm-12">',
-                '<input type="radio" name="answer_option" id="answer_option_b" value="b"> B ) ' + data.answer.b,
+                '<input type="radio" class="answer_option" name="answer_option" id="answer_option_b" value="b"> B ) ' + data.answer.b,
                 '</label>',
                 '</div>',
                 '</div>',
                 '<div class="row name">',
                 '<div class="col-sm-6">',
                 '<label class="radio-inline col-sm-12">',
-                '<input type="radio" name="answer_option" id="answer_option_c" value="c"> C ) ' + data.answer.c,
+                '<input type="radio" class="answer_option" name="answer_option" id="answer_option_c" value="c"> C ) ' + data.answer.c,
                 '</label>',
                 '</div>',
                 '<div class="col-sm-6">',
                 '<label class="radio-inline col-sm-12">',
-                '<input type="radio" name="answer_option" id="answer_option_d" value="d"> D ) ' + data.answer.d,
+                '<input type="radio" class="answer_option" name="answer_option" id="answer_option_d" value="d"> D ) ' + data.answer.d,
                 '</label>',
                 '</div>',
                 '</div>',
@@ -56,7 +68,7 @@
     };
     var addQuestion = function(data,i){
 
-        // In the beginning we can pass values into the row.
+        console.log(data);
 
         if (i == undefined){
             i = $('#captions form .questions').size() + 1;
@@ -83,7 +95,7 @@
                 '<div class="row questions">',
                 '<div class="form-group col-sm-11">',
                 '<label>Question - ' + i + '</label>',
-                '<input type="text" class="form-control" placeholder="Put your question here!" value="' + data.title + '">',
+                '<input type="text" class="form-control questionTitle" placeholder="Put your question here!" value="' + data.title + '">',
                 '</div>',
                 '<div class="form-group col-sm-1">',
                 '<label>Time</label>',
@@ -95,19 +107,19 @@
                 '<div class="answers">',
                 '<div class="form-group col-sm-6">',
                 '<label>A)</label>',
-                '<input type="text" class="caption form-control" placeholder="Answer (A)" value="' + answers.a + '">',
+                '<input type="text" class="caption form-control caption_a" placeholder="Answer (A)" value="' + answers.a + '">',
                 '</div>',
                 '<div class="form-group col-sm-6">',
                 '<label>B)</label>',
-                '<input type="text" class="caption form-control" placeholder="Answer (B)" value="' + answers.b + '">',
+                '<input type="text" class="caption form-control caption_b" placeholder="Answer (B)" value="' + answers.b + '">',
                 '</div>',
                 '<div class="form-group col-sm-6">',
                 '<label>C)</label>',
-                '<input type="text" class="caption form-control" placeholder="Answer (C)" value="' + answers.c + '">',
+                '<input type="text" class="caption form-control caption_c" placeholder="Answer (C)" value="' + answers.c + '">',
                 '</div>',
                 '<div class="form-group col-sm-6">',
                 '<label>D)</label>',
-                '<input type="text" class="caption form-control" placeholder="Answer (D)" value="' + answers.d + '">',
+                '<input type="text" class="caption form-control caption_d" placeholder="Answer (D)" value="' + answers.d + '">',
                 '<input type="hidden" name="id" id="id" value="' + data.id + '">',
                 '</div>',
                 '</div>',
@@ -120,20 +132,23 @@
     };
     var current_time = 0;
 
-    var player = null,
-        captions = {};
+    var player = null;
 
     var timeupdate = function(data){
         var seconds = Math.floor(data.seconds);
-        if (current_time != seconds && seconds > 0 ) {
-            if (captions[seconds] !== undefined){
-                    if (captions[seconds] == 0 ){
+
+        $.each(questionsDB, function (i, item) {
+            if (seconds != currentTime){
+                if (currentTime > 0){
+                    if (captions[seconds] != undefined){
                         player.pause();
-                        bannerQuestion(seconds);
+                        bannerQuestion(captions[seconds]);
                     }
+                }
+                currentTime = seconds;
             }
-            current_time = seconds;
-        }
+        });
+
     };
 
     var embed = function(url){
@@ -186,16 +201,12 @@
                 return i;
             }, {});
 
-        var questions = dataJson[0]["Questions"],
-            url = $('#url').val(initial.url);
+        if (initial.url == undefined || initial.url == ""){
+            initial.url = $('#url').val();
+        }
 
         embed(initial.url)
             .done(function(){
-                // Go embed the URL
-                $.each(questions, function(i, item) {
-                    addQuestion(this,i);
-                    $('#captions form input').trigger('blur');
-                });
 
                 // Autoplay
                 player.on('ready', function(){
@@ -220,7 +231,6 @@
                 } else {
                     returnArray[formArray[i]['name']] = formArray[i]['value'];
                 }
-                // checked="checked"
             }
             return returnArray;
         }
@@ -272,20 +282,31 @@
             }
         });
 
+//        var form = $(".email-collector.question form input");
+//        var formRes = objectifyForm(form);
+
+
         // Add the rows to the captions dict.
         $(document).on('blur', '#captions form .questions', function(){
-            var $parent = $(this);
-            var time = $parent.find('.time').val();
+            $(".row.questions").each(function (i, item) {
 
-            if (time){
-                var p = time;
-                // It's a range.
-                if (p.length > 0){
-                    if (captions[parseInt(time, 10)] == undefined){
-                        captions[parseInt(time, 10)] = 0;
-                    }
+                if (questionsDB[i] != undefined){
+                    var title = $(item).find('.questionTitle').val(),
+                        start = $(item).find('.time').val(),
+                        a = $(item).find('.caption_a').val(),
+                        b = $(item).find('.caption_b').val(),
+                        c = $(item).find('.caption_c').val(),
+                        d = $(item).find('.caption_d').val();
+
+                        questionsDB[i].title  = title;
+                        questionsDB[i].start  = start;
+                        questionsDB[i].answer['a'] = a;
+                        questionsDB[i].answer['b'] = b;
+                        questionsDB[i].answer['c'] = c;
+                        questionsDB[i].answer['d'] = d;
                 }
-            }
+
+            });
         });
     });
 })(jQuery, document);

@@ -44,16 +44,16 @@
 
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-video-camera"></i></div>
-						<input name="url" type="text" value="{{ videoUrl }}" class="form-control">
+						<input name="url" id="url" type="text" value="{{ videoUrl }}" class="form-control">
 					</div>
-
+					<input type="hidden" id="id_video" value="{{ idVideo }}">
 					<button type="submit" class="btn btn-primary btn-rounded">Load video</button>
 				</div>
 			</div>
 		</form>
 		<div class="row caption-actions" style="display: block;">
 			<div class="col-sm-12 box-spacing">
-				<a href="#" id="add" class="btn btn-secondary btn-lg btn-block">Add another caption <i class="fa fa-plus"></i></a>
+				<a href="#" id="add" class="btn btn-secondary btn-lg btn-block">Add another Question <i class="fa fa-plus"></i></a>
 			</div>
 			<div class="col-sm-12 box-action">
 				<div class="wrapper">
