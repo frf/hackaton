@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="- La">
+    <list default="true" id="6fa4fe30-616e-4af1-b00d-dc4ebed95c60" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/databaseScript.sql" afterPath="$PROJECT_DIR$/db/databaseScript.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" afterPath="$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" afterPath="$PROJECT_DIR$/src/Controllers/Course/CourseController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Views/Course/new.twig" afterPath="$PROJECT_DIR$/src/Views/Course/new.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,13 +31,13 @@
       <file leaf-file-name="quiz.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="272" column="25" lean-forward="false" selection-start-line="272" selection-start-column="25" selection-end-line="272" selection-end-column="25" />
+            <state relative-caret-position="83">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding>
-                <element signature="e#5495#8077#0" expanded="false" />
-                <marker date="1491783562000" expanded="true" signature="3496:3513" ph="..." />
-                <marker date="1491783562000" expanded="true" signature="3496:3529" ph="..." />
-                <marker date="1491783562000" expanded="true" signature="7851:7868" ph="..." />
+                <element signature="e#2478#5060#0" expanded="false" />
+                <marker date="1491784140000" expanded="true" signature="479:496" ph="..." />
+                <marker date="1491784140000" expanded="true" signature="479:512" ph="..." />
+                <marker date="1491784140000" expanded="true" signature="4834:4851" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
-              <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+              <caret line="113" column="39" lean-forward="false" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -1144,11 +1143,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491779874798</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="- Last commit...">
+      <created>1491783656767</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1491783656768</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77379000" />
+    <option name="totallyTimeSpent" value="77968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1920" height="1053" extended-state="6" />
@@ -1641,7 +1647,7 @@
     <entry file="file://$PROJECT_DIR$/src/Views/Course/new.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
-          <caret line="113" column="39" lean-forward="true" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+          <caret line="113" column="39" lean-forward="false" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#small#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -1652,13 +1658,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/plugins/playerjs/scripts/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="272" column="25" lean-forward="false" selection-start-line="272" selection-start-column="25" selection-end-line="272" selection-end-column="25" />
+        <state relative-caret-position="83">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <element signature="e#5495#8077#0" expanded="false" />
-            <marker date="1491783562000" expanded="true" signature="3496:3513" ph="..." />
-            <marker date="1491783562000" expanded="true" signature="3496:3529" ph="..." />
-            <marker date="1491783562000" expanded="true" signature="7851:7868" ph="..." />
+            <element signature="e#2478#5060#0" expanded="false" />
+            <marker date="1491784140000" expanded="true" signature="479:496" ph="..." />
+            <marker date="1491784140000" expanded="true" signature="479:512" ph="..." />
+            <marker date="1491784140000" expanded="true" signature="4834:4851" ph="..." />
           </folding>
         </state>
       </provider>
