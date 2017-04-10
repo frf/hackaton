@@ -1,4 +1,4 @@
-# hackaton
+# Thinkific - Hackaton
 
 Hi! 
 To prepare the environment, you need to install mysql and php 7.1.
